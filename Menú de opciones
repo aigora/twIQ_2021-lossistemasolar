@@ -4,7 +4,8 @@ int numero;
 char c ;
  printf("Bienvenido al programa para aprender sobre el sistema solar.\n");
  printf("En primer lugar, ¿te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
- printf("Si sientes que necesitas saber mas sobre el universo antes de ponerte a prueba , escribe 'aprendizaje', si por el contrario consideras que ya estas preparado/a escribe 'evaluacion'\n");
+ printf("Si sientes que necesitas saber mas sobre el universo antes de ponerte a prueba , escribe 'aprendizaje', ");
+ printf("si por el contrario consideras que ya estas preparado/a escribe 'evaluacion'\n");
  scanf("%c",&c);
  if (c=='evaluacion'){
  }
