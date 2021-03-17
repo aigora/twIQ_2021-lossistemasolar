@@ -2,6 +2,7 @@
 ## Descripcion del trabajo
 [En este programa dscubrirán como se han formado los planetas, lo que representan las galaxias y las constelaciones, la función que desempeña la Luna y el Sol… Aprenderá el primer viaje del hombre en el espacio y de las misiones de las lanzaderas y de los cohetes. Varios juegos les ayudaran a memorizar los numerosos temas.
 Nuestros proyecto se divide en dos partes iniciales.]
+
 [La primera parte se basa en la actividad didactica a traves de la divulgacion de conocimientos sobre el sistema solar.
 La segunda parte se trata de una serie de actividades interactivas para mostras las competencia poseidas.]
 
