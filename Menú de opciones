@@ -1,50 +1,53 @@
 #include<stdio.h>
 int main() {
-int numero;
-char c ;
- printf("Bienvenido al programa para aprender sobre el sistema solar.\n");
- printf("\n");
- printf("En primer lugar, ¿te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
- printf("Si sientes que necesitas saber mas sobre el universo antes de ponerte a prueba , escribe 'aprendizaje'.\n");
- printf("Si por el contrario consideras que ya estas preparado/a escribe 'evaluacion'\n");
- scanf("%c",&c);
- if (c=='evaluacion'){
- }
- else if (c=='aprendizaje'){
- 
- printf("Elige sobre que quieres aprender: -Planetas del sistema solar, -galaxias o -curiosidades del universo.\n");
- printf("Introduce elcaracter en minusculas:\n");
-do {
-scanf("%d", &numero);
-switch (numero) {
-case 's':
-printf("Informacion Sol.\n");
-break;
-case 'S':
-printf("Informacion Sol.\n");
-break;
-case 3:
-printf("Miercoles\n");
-break;
-case 4:
-printf("Jueves\n");
-break;
-case 5:
-printf("Viernes\n");
-break;
-case 6:
-printf("Sabado\n");
-break;
-case 7:
-printf("Domingo\n");
-break;
-default:
-printf("Opcion incorrecta.\n");
-}
-} 
-while (numero >= 0);
-}
+	int temaPrincipal;
+	char opcion ;
 
-printf("Fin del programa.\n");
+ 	printf("Bienvenido al programa para aprender sobre el sistema solar.\n");
+ 	printf("\n");
+ 	printf("En primer lugar, ¿te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
+	 printf("Si sientes que necesitas saber mas sobre el universo antes de ponerte a prueba , escribe 1.\n");
+ 	printf("Si por el contrario consideras que ya estas preparado/a escribe 2\n");
+ 	scanf("%c",&opcion);
+ 
+ 	
+ 	if (opcion = 1){
+ 		printf("- El Universo (U)\n");
+ 		printf("- El Sistema solar (S)\n");
+ 		printf("- La Tierra (T)\n");
+ 		printf("- La Luna (L)\n");
+ 		printf("- La conquista el espacio (C)\n");
+ 		printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
+ 		fflush(stdin);
+		do {
+			scanf("%c", &temaPrincipal);
+			switch (temaPrincipal) {
+				case 'U':
+					printf("El Universo.\n");
+				break;
+				case 'S':
+					printf("El Sistema Solar.\n");
+				break;
+				case 'T':
+					printf("La Tierra.\n");
+				break;
+				case 'L':
+					printf("La Luna.\n");
+				break;
+				case 'C':
+					printf("La conquista el espacio.\n");
+				break;
+			default:
+				printf("\n");
+			}
+		} 
+	while (opcion = 1);
+	}
+	
+	else if (opcion = 2) {
+ 	}
+	printf("Fin del programa.\n");
+	
+	return 0;
 
 }
