@@ -1,7 +1,15 @@
 #include<stdio.h>
- int main() {
+int main() {
 int numero;
- printf("Bienvenido al programa para aprender sobre el sistema solar:\n");
+char c ;
+ printf("Bienvenido al programa para aprender sobre el sistema solar.\n");
+ printf("En primer lugar, ¿te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
+ printf("Si sientes que necesitas saber mas sobre el universo antes de ponerte a prueba , escribe 'aprendizaje', si por el contrario consideras que ya estas preparado/a escribe 'evaluacion'\n");
+ scanf("%c",&c);
+ if (c=='evaluacion'){
+ }
+ else if (c=='aprendizaje'){
+ 
  printf("Elige sobre que quieres aprender: -Planetas del sistema solar, -galaxias o -curiosidades del universo.\n");
  printf("Introduce elcaracter en minusculas:\n");
 do {
@@ -33,7 +41,7 @@ printf("Opcion incorrecta.\n");
 }
 } 
 while (numero >= 0);
-
+}
 
 printf("Fin del programa.\n");
 
