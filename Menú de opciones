@@ -1,5 +1,40 @@
-# include <stdio.h>
+#include<stdio.h>
+ int main() {
+int numero;
+ printf("Bienvenido al programa para aprender sobre el sistema solar:\n");
+ printf("Elige sobre que quieres aprender: -Planetas del sistema solar, -galaxias o -curiosidades del universo.\n");
+ printf("Introduce elcaracter en minusculas:\n");
+do {
+scanf("%d", &numero);
+switch (numero) {
+case 's':
+printf("Informacion Sol.\n");
+break;
+case 'S':
+printf("Informacion Sol.\n");
+break;
+case 3:
+printf("Miercoles\n");
+break;
+case 4:
+printf("Jueves\n");
+break;
+case 5:
+printf("Viernes\n");
+break;
+case 6:
+printf("Sabado\n");
+break;
+case 7:
+printf("Domingo\n");
+break;
+default:
+printf("Opcion incorrecta.\n");
+}
+} 
+while (numero >= 0);
 
-int main() {
+
+printf("Fin del programa.\n");
 
 }
