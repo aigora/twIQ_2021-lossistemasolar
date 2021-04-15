@@ -9,13 +9,14 @@ int main() {
 	char temaPrincipal, temaSecundario, temaSecundario1 ;
 	struct jugador lista[N];
 	int opcion, n=1,i=0;
-printf("\n			## Bienvenido a Aprender sobre el Sistema Solar ##.\n");
+    printf("\n			## Bienvenido a Aprender sobre el Sistema Solar ##.\n\n");
 do{
  	printf("¿Te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
 	 printf("Necesitas saber mas sobre el universo (1).\n");
  	printf("Te consideras preparado/a (2).\n");
  	scanf("%d",&opcion);
-	
+ 
+ 	
 if (opcion == 1){
  		printf("- El Universo (U)\n");
  		printf("- El Sistema solar (S)\n");
@@ -29,11 +30,11 @@ if (opcion == 1){
 				case 'U':
 					printf("El Universo:\n");
 					printf("Definicion .\n");
-					printf("El universo es enorme, hemos seleccionado los temas mas interesantes,\n");
-					printf(" Escoje uno entre los siguientes:\n");					
-					printf("-Las Galaxias.  (G)\n");
- 		            printf("-El nacimiento del Sol.  (S)\n");
- 		            printf("-La formacion de los planetas.  (P)\n");
+					printf("\nEl universo es enorme, hemos seleccionado los temas mas interesantes,\n");
+					printf("Escoje uno entre los siguientes:\n");					
+					printf("	-Las Galaxias.  (G)\n");
+ 		            printf("	-El nacimiento del Sol.  (S)\n");
+ 		            printf("	-La formacion de los planetas.  (P)\n");
  		            printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
  		            fflush(stdin);
  		            scanf("%c", &temaSecundario);
