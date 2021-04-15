@@ -9,11 +9,11 @@ int main() {
 	char temaPrincipal, temaSecundario, temaSecundario1 ;
 	struct jugador lista[N];
 	int opcion, n=1,i=0;
-    printf("\n			## Bienvenido a Aprender sobre el Sistema Solar ##.\n\n");
+    printf("Bienvenido al programa para aprender sobre el sistema solar.\n");
 do{
  	printf("¿Te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
-	 printf("Necesitas saber mas sobre el universo (1).\n");
- 	printf("Te consideras preparado/a (2).\n");
+	 printf("Si sientes que necesitas saber mas sobre el universo antes de ponerte a prueba , escribe 1.\n");
+ 	printf("Si por el contrario consideras que ya estas preparado/a escribe 2.\n");
  	scanf("%d",&opcion);
  
  	
@@ -30,11 +30,11 @@ if (opcion == 1){
 				case 'U':
 					printf("El Universo:\n");
 					printf("Definicion .\n");
-					printf("\nEl universo es enorme, hemos seleccionado los temas mas interesantes,\n");
-					printf("Escoje uno entre los siguientes:\n");					
-					printf("	-Las Galaxias.  (G)\n");
- 		            printf("	-El nacimiento del Sol.  (S)\n");
- 		            printf("	-La formacion de los planetas.  (P)\n");
+					printf("El universo es enorme, hemos seleccionado los temas mas interesantes,\n");
+					printf(" Escoje uno entre los siguientes:\n");					
+					printf("-Las Galaxias.  (G)\n");
+ 		            printf("-El nacimiento del Sol.  (S)\n");
+ 		            printf("-La formacion de los planetas.  (P)\n");
  		            printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
  		            fflush(stdin);
  		            scanf("%c", &temaSecundario);
@@ -151,7 +151,36 @@ if (opcion == 1){
 				break;
 				case 'L':
 					printf("La Luna.\n");
+					printf("Definicion.\n");
+					    printf(" Escoje uno entre los siguientes temas sobre la Luna:\n");					
+					        printf("-La Luna satelite de la Tierra.  (L)\n");
+ 		                    printf("-Superficie.  (S)\n");
+ 		                    printf("-Caras de la Luna.  (C)\n");
+ 		                    printf("-Curiosidades.  (U)\n");
+ 		                    printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
+ 		                    fflush(stdin);
+ 		                    scanf("%c", &temaSecundario1);
+							switch (temaSecundario1){
+						
+					        	case 'L':
+					                printf("La Luna satelite de la Tierra:\n");
 					
+				                break;
+				                case 'S':
+					                printf("Superficie:\n");
+					
+				                break;
+				                case 'C':
+				 	                printf("Caras de la Luna:\n");
+					
+				                break;
+				                case 'U':
+				 	                printf("Curiosidades:\n");
+					
+				                break;				                
+				                default:
+				                    printf("\n");
+							}		                          		                    		                  	                    
 				break;
 				case 'C':
 					printf("La conquista el espacio.\n");
