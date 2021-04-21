@@ -147,65 +147,72 @@ if (opcion == 1){
 					        switch (temaSecundario1){
 					        	case 'M':
 					                printf("Mercurio:\n");
-									printf("Radio: 2439640,3825 km/T\n");
-									printf("Distancia al Sol: 5790,387 millones km\n");
-									printf("Formacion: rocosa\n");
-									printf("Color: gris\n\n");
+							printf("Radio: 2439640,3825 km/T\n");
+							printf("Distancia al Sol: 5790,387 millones km\n");
+							printf("Formacion: rocosa\n");
+							printf("Color: gris\n\n");
 				                break;
 				                case 'V':
 					                printf("Venus:\n");
-									printf("Radio: 6051590,9488 km/T\n");
-									printf("Distancia al Sol: 10820,7239 millones km\n");
-									printf("Formacion: rocosa\n");
-									printf("Color: amarillo\n\n");
+							printf("Radio: 6051590,9488 km/T\n");
+							printf("Distancia al Sol: 10820,7239 millones km\n");
+							printf("Formacion: rocosa\n");
+							printf("Color: amarillo\n\n");
 				                break;
 				                case 'T':
 				 	                printf("La Tierra:\n");
-									printf("Radio: 6637815 km/T\n");
-									printf("Distancia al Sol: 14961 millones km\n");
-									printf("Formacion: rocosa\n");
-									printf("Color: azul y blanco\n\n");
+							printf("Radio: 6637815 km/T\n");
+							printf("Distancia al Sol: 14961 millones km\n");
+							printf("Formacion: rocosa\n");
+							printf("Color: azul y blanco\n\n");
 				                break;
 				                case 'R':
 				 	                printf("Marte:\n");
-									printf("Radio: 3397000,53226 km/T\n");
-									printf("Distancia al Sol: 22791,524 millones km\n");
-									printf("Formacion: rocosa\n");
-									printf("Color: rojo\n\n");
+							printf("Radio: 3397000,53226 km/T\n");
+							printf("Distancia al Sol: 22791,524 millones km\n");
+							printf("Formacion: rocosa\n");
+							printf("Color: rojo\n\n");
 				                break;
 				                case 'J':
 				 	                printf("Jupiter:\n");
 				 	                printf("Radio: 714926811,209 km/T\n");
-									printf("Distancia al Sol: 77845,203 millones km\n");
-									printf("Formacion: gaseosa\n");
-									printf("Color: mezcal de colores (gama de colores calidos)\n\n");
+							printf("Distancia al Sol: 77845,203 millones km\n");
+							printf("Formacion: gaseosa\n");
+							printf("Color: mezcal de colores (gama de colores calidos)\n\n");
 				                break;
 				                case 'S':
 				 	                printf("Saturno:\n");
-									printf("Radio: 6026714 9,449 km/T\n");
-									printf("Distancia al Sol: 142679,537 millones km\n");
-									printf("Formacion: gaseosa\n");
-									printf("Color: naranja y blanco\n\n");
+							printf("Radio: 6026714 9,449 km/T\n");
+							printf("Distancia al Sol: 142679,537 millones km\n");
+							printf("Formacion: gaseosa\n");
+							printf("Color: naranja y blanco\n\n");
 				                break;
 				                case 'U':
 				 	                printf("Urano:\n");
-					
+							printf("Radio: 2557254,007 km/T\n");
+							printf("Distancia al Sol: 2871019,191 millones km\n");
+							printf("Formacion: gaseosa\n");
+							printf("Color: verde y azul\n\n");
 				                break;
 						case 'N':
 				 	                printf("Neptuno:\n");
+							printf("Radio: 24766363,883 km/T\n");
+							printf("Distancia al Sol: 4498330,069 millones km\n");
+							printf("Formacion: gaseosa\n");
+							printf("Color: azul\n\n");
 					
 				                break;
 				                case 'A':
 				 	                printf("Asteroides:\n");
-									printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tamaños\n\n");
+							printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tamaños\n\n");
 				                break;
 				                case 'E':
 				 	                printf("Metioritos:\n");
-									printf("Ciertos asteroides son atraidos hacia la Tierra.\nCuando alcanzan el suelo terrestre, se les llama meteoritos.\n\n");
+							printf("Ciertos asteroides son atraidos hacia la Tierra.\nCuando alcanzan el suelo terrestre, se les llama meteoritos.\n\n");
 				                break;
 				                case 'C':
 				 	                printf("Cometas:\n");
-									printf("Es un nucleo formado por rocas, gases helados y agua.\nEste nucleo esta envuelto en una cola de gas y de polvo\n\n");
+							printf("Es un nucleo formado por rocas, gases helados y agua.\nEste nucleo esta envuelto en una cola de gas y de polvo\n\n");
 				                break;
 				                default:
 				                    printf("\n");
