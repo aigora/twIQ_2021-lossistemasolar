@@ -89,7 +89,10 @@ if (opcion == 1){
 					        printf("En la prehistoria ya se interesaban por el Sol, las estrellas y \nlos cambios de estacion pero lo usaban como culto para la religion.\n");
 						printf("No fue hasta los mayas, en la ciudad de Chichen Itza, que construyeron\nel primer observatorio que permitio estudiar el cielo.\n");
 						printf("Los primeros astronomos observaban el cielo unicamente con sus ojos,\nmas tarde crearon instrumentos como el anteojo astronomico y el telescopio.\n");
-							
+						printf("Querrias saber un dato curioso...\n");
+							printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+							fflush(stdin);
+							scanf("%c", &curiosidad);
 						if((curiosidad == 'S') || (curiosidad == 's')) {
 							printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
 							printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
@@ -107,6 +110,7 @@ if (opcion == 1){
 				        break;
 				        case 'S':
 				 	        printf("Nuestra estrella el Sol:\n");
+							
 					
 				        break;
 				        case 'P':
