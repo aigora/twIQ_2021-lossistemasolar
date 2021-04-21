@@ -27,13 +27,13 @@ if (opcion == 1){
  		printf("- La Tierra (T)\n");
  		printf("- La Luna (L)\n");
  		printf("- La conquista el espacio (C)\n");
- 		printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
+ 		printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n\n");
  		fflush(stdin);
 			scanf("%c", &temaPrincipal);
 			switch (temaPrincipal) {
 				case 'U':
 					printf("El Universo:\n\n");
-					printf("El Universo se creo hace 14.000 millones de anyos tras una explosion gigante llamada Big Bang, que significa <la gran explosion>.\n");
+					printf("El Universo se creo hace 14.000 millones de anyos tras una explosion gigante llamada Big Bang,\nque significa <la gran explosion>.\n");
 					printf("\nEl universo es enorme, hemos seleccionado los temas mas interesantes.\n");
 					printf(" Escoje uno entre los siguientes:\n");					
 					printf("-Las Galaxias.  (G)\n");
@@ -45,13 +45,13 @@ if (opcion == 1){
 					switch (temaSecundario){
 				        case 'G':
 					        printf("Las Galaxias:\n\n");
-							printf("Una galaxia es el conjunto de estrellas, planetas, cometas, nubes de gas y de polvo que giran alrededor de un mismo nucleo.\n");
+							printf("Una galaxia es el conjunto de estrellas, planetas, cometas, nubes de gas\n y de polvo que giran alrededor de un mismo nucleo.\n");
 							printf("Querrias saber un dato curioso...\n");
 							printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
 							fflush(stdin);
 							scanf("%c", &curiosidad);
 							if((curiosidad == 'S') || (curiosidad == 's')) {
-								printf("A veces una galaxia masiva atrae a una galaxia mas  pequeña. Poco a poco las estrellas y las nubes de gas van a girar alrededor de un mismo nucleo.\n\n");
+								printf("A veces una galaxia masiva atrae a una galaxia mas  pequeña. Poco a poco\n las estrellas y las nubes de gas van a girar alrededor de un mismo nucleo.\n\n");
 							} else if ((curiosidad == 'N') || (curiosidad == 'n')) {
 								printf("Pues tu te lo pierdes :)\n\n");
 							} else {
@@ -60,35 +60,36 @@ if (opcion == 1){
 				        break;
 				        case 'S':
 					        printf("El nacimiento del Sol:\n\n");
-							printf("El sol nacio hace 5.000 millones de años en una inmensa nube de gas y de polvos y se puso a girar muy deprisa sobre sí mismo.");
+							printf("El sol nacio hace 5.000 millones de años en una inmensa nube de gas y de polvos y\n se puso a girar muy deprisa sobre si mismo.\n");
+							printf("El centro, muy caliente, se puso a brillar cada vez mas: nacio el Sol.\nA su alrededor, el polvo y los gases restantes continuaron girando.\n\n");
 				        break;
 				        case 'P':
-				 	        printf("La formacion de los planetas:\n");
-					
+				 	        printf("La formacion de los planetas:\n\n");
+				 	        printf("En ese disco que giraba alrededor del Sol, donde la temperatura es increiblemente alta,\nlos planetas se formaron varios millones de años despues.\n\n");
 				        break;
 			            default:
 				            printf("\n");
 			        }    
 				break;
 				case 'S':
-					printf("El Sistema Solar.\n");
-					printf("Definicion .\n");
+					printf("El Sistema Solar.\n\n");
 					printf("El Sistema solar es muy grande, hemos seleccionado los temas mas interesantes,\n");
-					printf(" Escoje uno entre los siguientes:\n");					
+					printf("Escoje uno entre los siguientes:\n\n");					
 					printf("-Observando el cielo.  (C)\n");
  		            printf("-Observando las estrellas.  (E)\n");
  		            printf("-Nuestra estrella el Sol.  (S)\n");
  		            printf("-Los planetas.  (P)\n");
- 		            printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
+ 		            printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n\n");
  		            fflush(stdin);
  		            scanf("%c", &temaSecundario);
 					switch (temaSecundario){
 				        case 'C':
 					        printf("Observando el cielo:\n");
-							printf("Querrias saber un dato curioso...\n");
-							printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
-							fflush(stdin);
-							scanf("%c", &curiosidad);
+					        printf("Un poquito de historia nunca biene mal y aqui debemos explicarla.\n");
+					        printf("En la prehistoria ya se interesaban por el Sol, las estrellas y \nlos cambios de estacion pero lo usaban como culto para la religión.\n");
+							printf("No fue hasta los mayas, en la ciudad de Chichen Itza, que construyeron\nel primer observatorio que permitio estudiar el cielo.\n");
+							printf("Los primeros astronomos observaban el cielo unicamente con sus ojos,\nmas tarde crearon instrumentos como el anteojo astronomico y el telescopio.\n");
+							
 							if((curiosidad == 'S') || (curiosidad == 's')) {
 								printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
 								printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
