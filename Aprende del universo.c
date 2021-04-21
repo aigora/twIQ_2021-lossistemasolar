@@ -84,15 +84,15 @@ if (opcion == 1){
  		            scanf("%c", &temaSecundario);
 					switch (temaSecundario){
 				        case 'C':
-					        printf("Observando el cielo:\n");
+					         printf("Observando el cielo:\n\n");
 					        printf("Un poquito de historia nunca biene mal y aqui debemos explicarla.\n");
 					        printf("En la prehistoria ya se interesaban por el Sol, las estrellas y \nlos cambios de estacion pero lo usaban como culto para la religion.\n");
 						printf("No fue hasta los mayas, en la ciudad de Chichen Itza, que construyeron\nel primer observatorio que permitio estudiar el cielo.\n");
-						printf("Los primeros astronomos observaban el cielo unicamente con sus ojos,\nmas tarde crearon instrumentos como el anteojo astronomico y el telescopio.\n");
+						printf("Los primeros astronomos observaban el cielo unicamente con sus ojos,\nmas tarde crearon instrumentos como el anteojo astronomico y el telescopio.\n\n");
 						printf("Querrias saber un dato curioso...\n");
-							printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
-							fflush(stdin);
-							scanf("%c", &curiosidad);
+						printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+						fflush(stdin);
+						scanf("%c", &curiosidad);
 						if((curiosidad == 'S') || (curiosidad == 's')) {
 							printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
 							printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
@@ -102,15 +102,18 @@ if (opcion == 1){
 						} else {
 							printf("Error, opcion incorrecta\n\n");
 						}
-					
 				        break;
 				        case 'E':
-					        printf("Observando las estrellas:\n");
-					
+					        printf("Observando las estrellas:\n\n");
+					        printf("Segun la estacion, las constelaciones de Casiopea y de la Osa Mayor\nno tienen la misma posicion respecto del horizonte.\n");
+					        printf("Para situar las constelaciones, busca la estrella Polar, que brilla\nen la cola de la Osa Menor: encontraras una en cada lado.\n");
+							printf("La Osa Mayor tiene forma de cacerola, Casiopea, una forma de W.\nEn otonyo, la Osa Mayor se situa debajo de la Osa Polar.\n\n");
 				        break;
 				        case 'S':
 				 	        printf("Nuestra estrella el Sol:\n");
-							
+				 	        printf("El Sol es una enorme bola de gas. Tarda 25 dias en dar una vuelta sobre si mismo.\n");
+				 	        printf("La superficie del Sol se parece a la piel de un pomelo gigante que se estuviera\n moviendo sin parar y que lanzara llamas como un dragon.\n");
+				 	        printf("La vida en la Tierra es posible gracias al Sol y a la presencia de agua. Con un\npoco mas de radiacion solar o con un poco menos todo podria cambiar.\n\n");
 					
 				        break;
 				        case 'P':
