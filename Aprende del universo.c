@@ -127,10 +127,10 @@ if (opcion == 1){
 							printf("Error, opcion incorrecta\n\n");
 						}
 				        break;
-				        				        case 'P':
-				 	        printf("Los planetas y demas cuerpos estelares:\n");
-					        printf(" Escoje uno entre los siguientes:\n");					
-					        printf("-Mercurio.  (M)\n");
+				        case 'P':
+				    printf("Los planetas y demas cuerpos estelares:\n");
+			            printf(" Escoje uno entre los siguientes:\n");					
+			            printf("-Mercurio.  (M)\n");
  		                    printf("-Venus.  (V)\n");
  		                    printf("-La Tierra.  (T)\n");
  		                    printf("-Marte.  (R)\n");
@@ -213,7 +213,26 @@ if (opcion == 1){
 				        break;
 			            default:
 				            printf("\n");
-			        }     
+			        }   
+				 printf("Querrias saber un dato curioso...\n");
+				 printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+				 fflush(stdin);
+				 scanf("%c", &curiosidad);
+				 if((curiosidad == 'S') || (curiosidad == 's')) {
+				       printf("Para memorizar el nombre de los planetas , de la Luna y del Sol\n");
+				       printf("recita los dias de la semana. A cada astro le corresponde un dia..\n\n");
+				       pritnf("Lun-es → Luna\n");
+				       pritnf("Mar-tes → Marte\n");
+				       pritnf("Mier-coles → Mercurio\n");
+				       pritnf("Ju-eves → Jupiter\n");
+				       pritnf("Vie-rnes → Venus\n");
+				       pritnf("Sa-bado  → Saturno\n");
+				       pritnf("Domingo → Sol\n");
+				 } else if ((curiosidad == 'N') || (curiosidad == 'n')) {
+				       printf("Pues tu te lo pierdes :)\n\n");
+				 } else {
+				       printf("Error, opcion incorrecta\n\n");
+						}	
 				break;
 				case 'T':
 					printf("La Tierra.\n");
