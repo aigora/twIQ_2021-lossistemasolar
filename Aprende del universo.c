@@ -9,11 +9,11 @@ int main() {
 	char temaPrincipal, temaSecundario, temaSecundario1 ;
 	struct jugador lista[N];
 	int opcion, n=1,i=0;
-    printf("Bienvenido al programa para aprender sobre el sistema solar.\n");
+        printf("\n			## Bienvenido a Aprender sobre el Sistema Solar ##.\n\n");
 do{
  	printf("¿Te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
-	 printf("Si sientes que necesitas saber mas sobre el universo antes de ponerte a prueba , escribe 1.\n");
- 	printf("Si por el contrario consideras que ya estas preparado/a escribe 2.\n");
+	 printf("Necesitas saber mas sobre el universo (1).\n");
+ 	printf("Te consideras preparado/a (2).\n");
  	scanf("%d",&opcion);
  
  	
