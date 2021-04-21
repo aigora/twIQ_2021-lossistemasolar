@@ -228,13 +228,13 @@ if (opcion == 1){
 				 if((curiosidad == 'S') || (curiosidad == 's')) {
 				       printf("Para memorizar el nombre de los planetas , de la Luna y del Sol\n");
 				       printf("recita los dias de la semana. A cada astro le corresponde un dia..\n\n");
-				       pritnf("Lun-es → Luna\n");
-				       pritnf("Mar-tes → Marte\n");
-				       pritnf("Mier-coles → Mercurio\n");
-				       pritnf("Ju-eves → Jupiter\n");
-				       pritnf("Vie-rnes → Venus\n");
-				       pritnf("Sa-bado  → Saturno\n");
-				       pritnf("Domingo → Sol\n");
+				       printf("Lun-es → Luna\n");
+				       printf("Mar-tes → Marte\n");
+				       printf("Mier-coles → Mercurio\n");
+				       printf("Ju-eves → Jupiter\n");
+				       printf("Vie-rnes → Venus\n");
+				       printf("Sa-bado  → Saturno\n");
+				       printf("Domingo → Sol\n");
 				 } else if ((curiosidad == 'N') || (curiosidad == 'n')) {
 				       printf("Pues tu te lo pierdes :)\n\n");
 				 } else {
