@@ -60,7 +60,7 @@ if (opcion == 1){
 				        break;
 				        case 'S':
 					        printf("El nacimiento del Sol:\n\n");
-							printf("El sol nacio hace 5.000 millones de años en una inmensa nube de gas y de polvos y se puso a girar muy deprisa sobre sí mismo.")
+							printf("El sol nacio hace 5.000 millones de años en una inmensa nube de gas y de polvos y se puso a girar muy deprisa sobre sí mismo.");
 				        break;
 				        case 'P':
 				 	        printf("La formacion de los planetas:\n");
