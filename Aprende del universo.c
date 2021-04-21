@@ -279,6 +279,47 @@ if (opcion == 1){
 				                break;
 				                case 'U':
 				 	                printf("Curiosidades:\n");
+						        printf("Querrias saber un dato curioso...\n");
+				                        printf("Escoje entre tres curiosidades ("A","B" y "C") o si quiere continuar pulse (N)\n");
+				                        fflush(stdin);
+				                        scanf("%c", &curiosidad);
+				                        if((curiosidad == 'A') || (curiosidad == 'a')) {
+				                             printf("La luna y el sol a veces juegan al escondite , lo que da lugar \n");
+				                             printf("a los eclipses.Estos pueden ser totales o parciales.\n");
+				                             printf("Cuando la Luna pasa tenemos un eclipse Solar.Si el  \n");
+				                             printf("eclipse es total, los astro estan perfectamente alineados.\n\n");
+						             printf("Un eclipse total de Sol , solo dura unos minutos.Los rayos del Sol quedan totalmente\n");
+						             printf("tapados por la Luna y se hace de noche en pleno dia.La temperatura cae.Es posible \n");
+							     printf("observa este tipo de eclipses pero hay que ser prudentes y llevar unas gafas con un filtro especial.\n\n");
+						             printf("A veces cuando hay Luna llena , la Tierra pasa entre la Luna  y el Sol, \n");
+							     printf("y su sombra tapa la Luna con un velo durante una hora o mas :\n");
+							     printf("es un eclipse de Luna. Se puede ver desde la cara de la Tierra sumergida en la noche.\n\n");
+							     printf("El eclipse es total de la Luna esta completamente cubierta por la sombra\n");
+							     printf("de la Tierra,y parcial, si lo que esta cubierto es solo una parte.\n");
+							     printf("Durante el eclipse, la Luna puede adquirir unos bellos colores rojizos.\n");
+							     printf("Estos se deben a los rayos de Sol que le llegan .Este fenomeno puede durar dos horas.\n\n");
+							 } else if ((curiosidad == 'B') || (curiosidad == 'b')) {
+				                                   printf("La Luna juega con los oceanos:\n\n");
+								   printf("El campo magnetico de la Tierra atrae a la Luna .Pero la Luna tambien atrae\n");
+								   printf(" a la Tierra y, especialmente, a los oceanos.Es lo que provoca las mareas.\n");
+								   printf("-Con marea baja , la orilla se queda seca.El mar se retira de la playa.\n");
+								   printf("-Con marea  alta, el mar se vuelve a subir a la playa y los barcos flotan.\n");
+								   printf("El Monte Saint-Michel, en Francia , se convierte en isla al subir la marea.\n");
+								   printf("En el Mediterraneo las mareas son debiles porque es un mar cerrado.\n\n");
+				                         } else if ((curiosidad == 'C') || (curiosidad == 'c')) {
+				                                   printf("La jardineria y la Luna:\n\n");
+								   printf("La Luna es creciente de la Luna nueva hasta la Luna llena y \n");
+								   printf("menguante,desde la luna llena hasta la Luna nueva siguiente.\n");
+								   printf("Durante la fase creciente de la Luna , las plantas crecen mas deprisa.\n");
+								   printf("Es el momento de sembrar semillas y de plantar los árboles .\n");
+								   printf("Durante la Luna menguante, la luz es mas tenue, las plantas no\n");
+								   printf("se mantienen tan bien.Si cortas el cesped, crecera mas despacio.\n");
+				                        }	
+				                         else if ((curiosidad == 'N') || (curiosidad == 'n')) {
+				                                   printf("Pues tu te lo pierdes :)\n\n");
+				                        } else {
+				                                   printf("Error, opcion incorrecta\n\n");
+						}
 					
 				                break;				                
 				                default:
