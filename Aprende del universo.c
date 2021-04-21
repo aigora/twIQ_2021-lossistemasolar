@@ -86,19 +86,19 @@ if (opcion == 1){
 				        case 'C':
 					        printf("Observando el cielo:\n");
 					        printf("Un poquito de historia nunca biene mal y aqui debemos explicarla.\n");
-					        printf("En la prehistoria ya se interesaban por el Sol, las estrellas y \nlos cambios de estacion pero lo usaban como culto para la religión.\n");
-							printf("No fue hasta los mayas, en la ciudad de Chichen Itza, que construyeron\nel primer observatorio que permitio estudiar el cielo.\n");
-							printf("Los primeros astronomos observaban el cielo unicamente con sus ojos,\nmas tarde crearon instrumentos como el anteojo astronomico y el telescopio.\n");
+					        printf("En la prehistoria ya se interesaban por el Sol, las estrellas y \nlos cambios de estacion pero lo usaban como culto para la religion.\n");
+						printf("No fue hasta los mayas, en la ciudad de Chichen Itza, que construyeron\nel primer observatorio que permitio estudiar el cielo.\n");
+						printf("Los primeros astronomos observaban el cielo unicamente con sus ojos,\nmas tarde crearon instrumentos como el anteojo astronomico y el telescopio.\n");
 							
-							if((curiosidad == 'S') || (curiosidad == 's')) {
-								printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
-								printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
-								printf("perseidas.¡CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
+						if((curiosidad == 'S') || (curiosidad == 's')) {
+							printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
+							printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
+							printf("perseidas.¡CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
 							} else if ((curiosidad == 'N') || (curiosidad == 'n')) {
 								printf("Pues tu te lo pierdes :)\n\n");
-							} else {
-								printf("Error, opcion incorrecta\n\n");
-							}
+						} else {
+							printf("Error, opcion incorrecta\n\n");
+						}
 					
 				        break;
 				        case 'E':
