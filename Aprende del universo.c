@@ -85,6 +85,19 @@ if (opcion == 1){
 					switch (temaSecundario){
 				        case 'C':
 					        printf("Observando el cielo:\n");
+							printf("Querrias saber un dato curioso...\n");
+							printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+							fflush(stdin);
+							scanf("%c", &curiosidad);
+							if((curiosidad == 'S') || (curiosidad == 's')) {
+								printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
+								printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
+								printf("perseidas.¡CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
+							} else if ((curiosidad == 'N') || (curiosidad == 'n')) {
+								printf("Pues tu te lo pierdes :)\n\n");
+							} else {
+								printf("Error, opcion incorrecta\n\n");
+							}
 					
 				        break;
 				        case 'E':
