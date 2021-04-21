@@ -13,7 +13,7 @@ int main() {
 	int opcion, n=1,i=0;
 	char curiosidad;
 	
-        printf("\n		## Bienvenido a Aprender sobre el Sistema Solar ##\n\n");
+        printf("\n		                 ## Bienvenido a Aprender sobre el Sistema Solar ##\n\n");
 do{
  	printf("¿Te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
 	 printf("Necesitas saber mas sobre el universo (1).\n");
@@ -258,16 +258,23 @@ if (opcion == 1){
  		                    scanf("%c", &temaSecundario1);
 							switch (temaSecundario1){
 						
-					        	case 'L':
+					        case 'L':
 					                printf("La Luna satelite de la Tierra:\n");
+							printf("Hace varios millones de años, un bolido del espacio habia colisionado  con la Tierra;\n");
+							printf("los fragmentos restantes habian dado como resultado la Luna.\n");
 					
 				                break;
 				                case 'S':
 					                printf("Superficie:\n");
+							printf("Con una luneta astronomica puedes observar los crateres en la superficie de la Luna ,\n");
+							printf("que han sido provocados por meteoritos.\n");
 					
 				                break;
 				                case 'C':
 				 	                printf("Caras de la Luna:\n");
+							printf("Desde la Tierra vemos la parte de la Luna iluminada por el Sol.\n");
+							printf("He aqui las diferentes formas que la Luna adquiere durante un mes:\n");
+							printf("-Luna nueva\n-Media Luna\n-Cuarto creciente(dos cada una con la sombra en un lado distinto)\n-Luna llena\n-Cuarto menguante\n-Luna menguante\n");
 					
 				                break;
 				                case 'U':
