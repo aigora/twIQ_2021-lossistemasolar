@@ -114,7 +114,18 @@ if (opcion == 1){
 				 	        printf("El Sol es una enorme bola de gas. Tarda 25 dias en dar una vuelta sobre si mismo.\n");
 				 	        printf("La superficie del Sol se parece a la piel de un pomelo gigante que se estuviera\n moviendo sin parar y que lanzara llamas como un dragon.\n");
 				 	        printf("La vida en la Tierra es posible gracias al Sol y a la presencia de agua. Con un\npoco mas de radiacion solar o con un poco menos todo podria cambiar.\n\n");
-					
+					        printf("Querrias saber un dato curioso...\n");
+						printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+						fflush(stdin);
+						scanf("%c", &curiosidad);
+						if((curiosidad == 'S') || (curiosidad == 's')) {
+							printf("Auroras Polares:son fenomenos luminosos relacionados con el Sol que\n");
+							printf(" podemos observar en el cielo, sobre todo en el Polo Norte y en el Sur.\n\n");								
+							} else if ((curiosidad == 'N') || (curiosidad == 'n')) {
+								printf("Pues tu te lo pierdes :)\n\n");
+						} else {
+							printf("Error, opcion incorrecta\n\n");
+						}
 				        break;
 				        case 'P':
 				 	        printf("Los planetas y demas cuerpos estelares:\n");
