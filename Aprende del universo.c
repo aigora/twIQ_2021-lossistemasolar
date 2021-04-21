@@ -136,7 +136,8 @@ if (opcion == 1){
  		                    printf("-Marte.  (R)\n");
  		                    printf("-Jupiter.  (J)\n");
  		                    printf("-Saturno.  (S)\n");
- 		                    printf("-Urano y neptuno.  (U)\n");
+ 		                    printf("-Urano.  (U)\n");
+				    printf("Neptuno (N)\n");
  		                    printf("-Asteroides.  (A)\n");
  		                    printf("-Metioritos. (E)\n");
  		                    printf("-Cometas.  (C)\n");
@@ -187,7 +188,11 @@ if (opcion == 1){
 									printf("Color: naranja y blanco\n\n");
 				                break;
 				                case 'U':
-				 	                printf("Urano y Neptuno:\n");
+				 	                printf("Urano:\n");
+					
+				                break;
+						case 'N':
+				 	                printf("Neptuno:\n");
 					
 				                break;
 				                case 'A':
