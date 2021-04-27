@@ -228,13 +228,13 @@ if (opcion == 1){
 				 if((curiosidad == 'S') || (curiosidad == 's')) {
 				       printf("Para memorizar el nombre de los planetas , de la Luna y del Sol\n");
 				       printf("recita los dias de la semana. A cada astro le corresponde un dia..\n\n");
-				       printf("Lun-es → Luna\n");
-				       printf("Mar-tes → Marte\n");
-				       printf("Mier-coles → Mercurio\n");
-				       printf("Ju-eves → Jupiter\n");
-				       printf("Vie-rnes → Venus\n");
-				       printf("Sa-bado  → Saturno\n");
-				       printf("Domingo → Sol\n");
+				       printf("Lun-es ? Luna\n");
+				       printf("Mar-tes ? Marte\n");
+				       printf("Mier-coles ? Mercurio\n");
+				       printf("Ju-eves ? Jupiter\n");
+				       printf("Vie-rnes ? Venus\n");
+				       printf("Sa-bado  ? Saturno\n");
+				       printf("Domingo ? Sol\n");
 				 } else if ((curiosidad == 'N') || (curiosidad == 'n')) {
 				       printf("Pues tu te lo pierdes :)\n\n");
 				 } else {
@@ -243,7 +243,41 @@ if (opcion == 1){
 				break;
 				case 'T':
 					printf("La Tierra.\n");
-					
+					printf("Al ser nuestro planeta tenemos varios subtemas la mar\n");
+					printf(" de interesantes, escoje entre uno de los siguientes:\n\n");
+					printf("Escoje uno entre los siguientes:\n\n");					
+					printf("-Curiosidad.  (C)\n");
+ 		            printf("-¿Como es?.  (E)\n");
+ 		            printf("-Movimientos.  (M)\n");
+ 		            printf("-El Sol durante el anyo.  (S)\n");
+ 		            printf("-Aparicion de la vida.  (A)\n");
+ 		            printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n\n");
+ 		            fflush(stdin);
+ 		            scanf("%c", &temaSecundario);
+					switch (temaSecundario){
+				        case 'C':
+					        printf("¿Redonda o plana?\n");
+					        printf("La Tierra es redonda pero las comunidades cientificas no siempre\n");
+					        printf("se han puesto de acuerdo sobre su forma. Algunos decian que era\n");
+					        printf("redonda, otros que era plana. En la Antiguedad se pensaba que\n");
+					        printf("la Tierra era un disco que flotaba en una bola y los navegantes\n");
+					        printf("pensaban que lo que habia mas alla de los mares era el vacio.\n");
+				        break;
+				        case 'E':
+					        
+				        break;
+				        case 'M':
+					        
+				        break;
+				        case 'S':
+					        
+				        break;
+				        case 'A':
+					        
+				        break;
+				        default:
+				            printf("\n");
+					}
 				break;
 				case 'L':
 					printf("La Luna.\n");
