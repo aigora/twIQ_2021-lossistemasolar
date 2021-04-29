@@ -10,8 +10,9 @@ int main() {
 	int  x;
 	char temaPrincipal, temaSecundario, temaSecundario1 ;
 	struct jugador lista[N];
-	int opcion, n=1,i=0;
+	int opcion, n=1,i=0, contadorlineasfichero;
 	char curiosidad;
+	FILE*fichero;
 	
         printf("\n		                 ## Bienvenido a Aprender sobre el Sistema Solar ##\n\n");
 do{
@@ -414,7 +415,27 @@ if (opcion == 1){
 else if (opcion = 2) {
 	printf("Bienvenido al mini juego de preguntas y respuestas sobre el sistema solar y el universo:\n");
 	printf("Registrate:\n");
+	fichero=fopen("listajugadores.txt", "r");
+	if(fentrada== NULL){
+		printf("Error al abrir el fichero.\n");
+		return 0;
+	}
+	contadorlineasfichero=0;
+	while (fscanf(fichero, "%s %d", lista[contadorlineasfichero].nombre, &lista[contadorlineasfichero].puntuacion) != EOF){
+		contadorlineasfichero++;
+	}
+	fclose(fichero);
+	scanf("%s", lista[contadorlineasfichero+1].nombre);
 	
+	fichero=fopen("listajugadores.txt", "w");
+	if(fentrada== NULL){
+		printf("Error al abrir el fichero.\n");
+		return 0;
+	}
+	for(i=0;i<contadorlineasfichero+1;i++){
+		fprintf(fichero,"%s  %d\n", lista[i].nombre, lista[i].puntuacion);
+	}
+	fclose(fichero);
 }
 printf("¿Quieres continuar? Pulse 1 si quiere volver al menu de inicio o 2 si quiere cerrar el programa.\n");
 scanf("%d", &x);
