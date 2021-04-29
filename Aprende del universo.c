@@ -1,12 +1,16 @@
+// Juego educativo para todas las edades para aprender y mejorar la cultura general
 #include<stdio.h>
 #define N 100
 #define S 50
 
+// Definir estructura del juego
 struct jugador{
 	char nombre[50];
 	int puntuacion;
 };
+
 int main() {
+// Variables necesarias
 	int  x;
 	char temaPrincipal, temaSecundario, temaSecundario1 ;
 	struct jugador lista[N];
@@ -24,7 +28,7 @@ int main() {
  		printf("     - Te consideras preparad@ (2).\n");
  		scanf("%d",&opcion);
  
- 	
+// Teoria del programa (toda la informacion)
 	if (opcion == 1){
 		printf("     ----- opcion Aprende con Nosotros -----\n\n");
  		printf("     - El Universo (U)\n");
@@ -419,6 +423,7 @@ int main() {
 				printf("\n");
 			}    
 	}
+// Juego del programa (elegir una respuesta)
 	else if (opcion = 2) {
 				printf("     ----- opcion Juega con Nosotros -----\n\n");
 
@@ -502,7 +507,7 @@ int main() {
 	scanf("%d", &x);
 }
 	while(x==1);
- 	
+// Fin del programa
  	printf("  ----------------------------------------------------------\n");
 	printf("  #########  Gracias por confiar en nosotros ;)  #########\n");
 	printf("  #################  Hasta la proxima!!  #################\n");
