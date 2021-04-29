@@ -315,7 +315,7 @@ if (opcion == 1){
 				                case 'U':
 				 	                printf("Curiosidades:\n");
 						        printf("Querrias saber un dato curioso...\n");
-				                        printf("Escoje entre tres curiosidades ("A","B" y "C") o si quiere continuar pulse (N)\n");
+				                        printf("Escoje entre tres curiosidades (“A”,“B” y “C”) o si quiere continuar pulse (N)\n");
 				                        fflush(stdin);
 				                        scanf("%c", &curiosidad);
 				                        if((curiosidad == 'A') || (curiosidad == 'a')) {
@@ -416,7 +416,7 @@ else if (opcion = 2) {
 	printf("Bienvenido al mini juego de preguntas y respuestas sobre el sistema solar y el universo:\n");
 	printf("Registrate:\n");
 	fichero=fopen("listajugadores.txt", "r");
-	if(fentrada== NULL){
+	if(fichero== NULL){
 		printf("Error al abrir el fichero.\n");
 		return 0;
 	}
@@ -427,8 +427,52 @@ else if (opcion = 2) {
 	fclose(fichero);
 	scanf("%s", lista[contadorlineasfichero+1].nombre);
 	
+		printf("Antes de empezar con la ronda de preguntas debes saber que la respuesta \n debes ponerla con la letra en minuscula que corresponde y sin parentesis\n");
+		
+		printf("1.¿Como y cuando se creo el universo?¿Y el  sol?\n");
+		printf("a)Hace 7.000 millones de anyos de un exploxion llamada “Big Bang”\nb)Hace 14.00 millones de anyos en una explosion llamada “Big Bang”\nc)hace 8.000 millones de anyos en un explosion llamada “Ban Ban”\n");
+		fflush(stdin);
+		scanf("%c",&opcion);
+		
+		if(opcion=='b'){
+			printf("Correcto\n");
+		}else{
+			printf("Incorrecto\n");
+		}
+		
+		printf("2.¿Que es una galaxia?\n");
+		printf("a)Un conjunto de estrellas, planetas, cometas, nubes de gas y de polvo\nb)Un conjunto de gases y polvo que forman estrellas\nc)Un conjunto de piedras y arena\n");
+		fflush(stdin);
+		scanf("%c",&opcion);
+		
+		if(opcion=='a'){
+			printf("Correcto\n");
+		}else{
+			printf("Incorrecto\n");
+		}
+		
+		printf("3.¿Que civilizacion fue la primera en interesarse por el universo?\n");
+		printf("a)Aztecas\nb)Incas\nc)Mayas\n");
+		fflush(stdin);
+		scanf("%c",&opcion);
+		if(opcion=='c'){
+			printf("Correcto\n");
+		}else{
+			printf("Incorrecto\n");
+		}
+		
+		printf("4.Las constelaciones no cambian de posicion respecto del horizonte\n");
+		printf("a)Verdadero\nb)Falso\n");
+		fflush(stdin);
+		scanf("%c",&opcion);
+		if(opcion=='b'){
+			printf("Correcto\n");
+		}else{
+			printf("Incorrecto\n");
+		}
+	
 	fichero=fopen("listajugadores.txt", "w");
-	if(fentrada== NULL){
+	if(fichero== NULL){
 		printf("Error al abrir el fichero.\n");
 		return 0;
 	}
@@ -436,6 +480,9 @@ else if (opcion = 2) {
 		fprintf(fichero,"%s  %d\n", lista[i].nombre, lista[i].puntuacion);
 	}
 	fclose(fichero);
+	
+	
+	
 }
 printf("¿Quieres continuar? Pulse 1 si quiere volver al menu de inicio o 2 si quiere cerrar el programa.\n");
 scanf("%d", &x);
