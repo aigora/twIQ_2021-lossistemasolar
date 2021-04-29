@@ -504,7 +504,7 @@ int main() {
 	while(x==1);
  	
  	printf("  ----------------------------------------------------------\n");
-	printf("  #########  Gracias por confiar en nosotros ;)  #########\n\n");
+	printf("  #########  Gracias por confiar en nosotros ;)  #########\n");
 	printf("  #################  Hasta la proxima!!  #################\n");
  	printf("  ----------------------------------------------------------\n\n");
 	
