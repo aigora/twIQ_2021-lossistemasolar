@@ -3,7 +3,7 @@
 #define S 50
 
 struct jugador{
-	char nombre[S];
+	char nombre[50];
 	int puntuacion;
 };
 int main() {
@@ -425,8 +425,9 @@ else if (opcion = 2) {
 		contadorlineasfichero++;
 	}
 	fclose(fichero);
-	scanf("%s", lista[contadorlineasfichero+1].nombre);
-	
+	fflush(stdin);
+	gets(lista[contadorlineasfichero+1].nombre);
+	lista[contadorlineasfichero+1].puntuacion==0;
 		printf("Antes de empezar con la ronda de preguntas debes saber que la respuesta \n debes ponerla con la letra en minuscula que corresponde y sin parentesis\n");
 		
 		printf("1.¿Como y cuando se creo el universo?¿Y el  sol?\n");
