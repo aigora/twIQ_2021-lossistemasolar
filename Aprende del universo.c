@@ -1,7 +1,20 @@
 #include<stdio.h>
 #define N 100
 #define S 50
-
+void banner(){
+		printf("             ######################################################\n");
+	    printf("            #####################################################\n");
+        printf("           #### Bienvenido a Aprender sobre el Sistema Solar ##\n");
+        printf("          ####################################################\n");
+        printf("         ###################################################\n\n");
+}
+void banner2(){
+	    printf("                           #########################\n");
+	    printf("                         #############################\n");
+        printf("                       ##### VUELVE CUANDO QUIERAS #####\n");
+        printf("                         #############################\n");
+        printf("                           #########################\n\n");
+}
 struct jugador{
 	char nombre[50];
 	int puntuacion;
@@ -13,10 +26,10 @@ int main() {
 	int opcion, n=1,i=0, contadorlineasfichero;
 	char curiosidad;
 	FILE*fichero;
-	
-        printf("\n		                 ## Bienvenido a Aprender sobre el Sistema Solar ##\n\n");
+	banner();
+
 do{
- 	printf("¿Te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
+ 	printf("�Te sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
 	 printf("Necesitas saber mas sobre el universo (1).\n");
  	printf("Te consideras preparado/a (2).\n");
  	scanf("%d",&opcion);
@@ -485,13 +498,12 @@ else if (opcion = 2) {
 	
 	
 }
-printf("¿Quieres continuar? Pulse 1 si quiere volver al menu de inicio o 2 si quiere cerrar el programa.\n");
+printf("¿Quieres continuar? Pulse 1 si quiere volver al menu de inicio.\n");
 scanf("%d", &x);
 }
 while(x==1);
  	
 printf("Fin del programa.\n");
-	
+banner2();
 return 0;
-
 }
