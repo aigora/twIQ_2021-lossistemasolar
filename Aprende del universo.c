@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include<stdio.h>
 #define N 100
 #define S 50
