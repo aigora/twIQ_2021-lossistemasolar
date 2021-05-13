@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+// Juego educativo para todas las edades para aprender y mejorar la cultura general
 #include<stdio.h>
 #define N 100
 #define S 50
+// Declaramos las funciones banner
 void banner(){
 		printf("             ######################################################\n");
 	    printf("            #####################################################\n");
@@ -16,71 +17,81 @@ void banner2(){
         printf("                         #############################\n");
         printf("                           #########################\n\n");
 }
+// Definir estructura del juego
 struct jugador{
 	char nombre[50];
 	int puntuacion;
 };
+
 int main() {
+// Variables necesarias
 	int  x;
 	char temaPrincipal, temaSecundario, temaSecundario1 ;
 	struct jugador lista[N];
-	int opcion, n=1,i=0, contadorlineasfichero;
+	int opcion, n=1, i=0, contadorlineasfichero;
 	char curiosidad;
-	FILE*fichero;
-	banner();
+	FILE *fichero;
+	
+	printf("                       ------------------------------------------------------------\n");
+	printf("		            ## Bienvenido a Aprender sobre el Sistema Solar ##\n");
+	printf("                       ------------------------------------------------------------\n\n");
 
-do{
- 	printf("øTe sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n");
-	 printf("Necesitas saber mas sobre el universo (1).\n");
- 	printf("Te consideras preparado/a (2).\n");
- 	scanf("%d",&opcion);
+	do{
+ 		printf("  øTe sientes preparado para evaluar tus conocimientos o quieres aprender mas sobre el espacio?\n\n");
+		printf("     - Necesitas saber mas sobre el universo (1).\n");
+ 		printf("     - Te consideras preparad@ (2).\n");
+ 		scanf("%d",&opcion);
  
- 	
-if (opcion == 1){
- 		printf("- El Universo (U)\n");
- 		printf("- El Sistema solar (S)\n");
- 		printf("- La Tierra (T)\n");
- 		printf("- La Luna (L)\n");
- 		printf("- La conquista el espacio (C)\n");
- 		printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n\n");
+// Teoria del programa (toda la informacion)
+	if (opcion == 1){
+		printf("     ----- opcion Aprende con Nosotros -----\n\n");
+ 		printf("     - El Universo (U)\n");
+ 		printf("     - El Sistema solar (S)\n");
+ 		printf("     - La Tierra (T)\n");
+ 		printf("     - La Luna (L)\n");
+ 		printf("     - La conquista el espacio (C)\n");
+ 		printf("   (RECORDATORIO: Introduce el caracter en mayuscula)\n");
  		fflush(stdin);
 			scanf("%c", &temaPrincipal);
 			switch (temaPrincipal) {
 				case 'U':
-					printf("El Universo:\n\n");
-					printf("El Universo se creo hace 14.000 millones de anyos tras una explosion gigante llamada Big Bang,\nque significa <la gran explosion>.\n");
-					printf("\nEl universo es enorme, hemos seleccionado los temas mas interesantes.\n");
-					printf(" Escoje uno entre los siguientes:\n");					
-					printf("-Las Galaxias.  (G)\n");
- 		            printf("-El nacimiento del Sol.  (S)\n");
- 		            printf("-La formacion de los planetas.  (P)\n");
- 		            printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
+					printf("     ###  El Universo  ###\n\n");
+					printf("  El Universo se creo hace 14.000 millones de anyos tras una explosion gigante llamada Big Bang,\n  que significa <la gran explosion>.\n");
+					printf("\n  El universo es enorme, hemos seleccionado los temas mas interesantes.\n");
+					printf("  Escoje uno entre los siguientes:\n");					
+					printf("      -Las Galaxias.  (G)\n");
+ 		            printf("      -El nacimiento del Sol.  (S)\n");
+ 		            printf("      -La formacion de los planetas.  (P)\n");
+ 		            printf("   (RECORDATORIO: Introduce el caracter en mayuscula)\n");
  		            fflush(stdin);
  		            scanf("%c", &temaSecundario);
 					switch (temaSecundario){
 				        case 'G':
-					        printf("Las Galaxias:\n\n");
-							printf("Una galaxia es el conjunto de estrellas, planetas, cometas, nubes de gas\n y de polvo que giran alrededor de un mismo nucleo.\n");
-							printf("Querrias saber un dato curioso...\n");
-							printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+					        printf("     ***  Las Galaxias  ***\n\n");
+							printf("  Una galaxia es el conjunto de estrellas, planetas, cometas, nubes de gas\n  y de polvo que giran alrededor de un mismo nucleo.\n\n");
+							printf("  --- Querrias saber un dato curioso... ---\n");
+							printf("   Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
 							fflush(stdin);
 							scanf("%c", &curiosidad);
 							if((curiosidad == 'S') || (curiosidad == 's')) {
-								printf("A veces una galaxia masiva atrae a una galaxia mas  peque√±a. Poco a poco\n las estrellas y las nubes de gas van a girar alrededor de un mismo nucleo.\n\n");
+								printf("************************************************************************************************************************");
+								printf("          ## DATO CURIOSO ##\n\n");
+								printf("     A veces una galaxia masiva atrae a una galaxia mas pequenya. Poco a poco\n     las estrellas y las nubes de gas van a girar alrededor de un mismo nucleo.\n\n");
+								printf("************************************************************************************************************************");
 							} else if ((curiosidad == 'N') || (curiosidad == 'n')) {
-								printf("Pues tu te lo pierdes :)\n\n");
+								printf("     Pues tu te lo pierdes :)\n\n");
 							} else {
-								printf("Error, opcion incorrecta\n\n");
+								printf("     Error, opcion incorrecta\n\n");
 							}
 				        break;
 				        case 'S':
-					        printf("El nacimiento del Sol:\n\n");
-							printf("El sol nacio hace 5.000 millones de a√±os en una inmensa nube de gas y de polvos y\n se puso a girar muy deprisa sobre si mismo.\n");
-							printf("El centro, muy caliente, se puso a brillar cada vez mas: nacio el Sol.\nA su alrededor, el polvo y los gases restantes continuaron girando.\n\n");
+				        	printf("     ***  El nacimiento del Sol  ***\n\n");
+							printf("  El sol nacio hace 5.000 millones de aÒos en una inmensa nube de gas y de polvos y\n  se puso a girar muy deprisa sobre si mismo.\n");
+							printf("  El centro, muy caliente, se puso a brillar cada vez mas: nacio el Sol.\n  A su alrededor, el polvo y los gases restantes continuaron girando.\n\n");
 				        break;
 				        case 'P':
 				 	        printf("La formacion de los planetas:\n\n");
-				 	        printf("En ese disco que giraba alrededor del Sol, donde la temperatura es increiblemente alta,\nlos planetas se formaron varios millones de a√±os despues.\n\n");
+				 	        printf("En ese disco que giraba alrededor del Sol, donde la temperatura es increiblemente alta,\nlos planetas se formaron varios millones de aÒos despues.\n\n");
 				        break;
 			            default:
 				            printf("\n");
@@ -111,7 +122,7 @@ if (opcion == 1){
 						if((curiosidad == 'S') || (curiosidad == 's')) {
 							printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
 							printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
-							printf("perseidas.¬°CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
+							printf("perseidas.°CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
 							} else if ((curiosidad == 'N') || (curiosidad == 'n')) {
 								printf("Pues tu te lo pierdes :)\n\n");
 						} else {
@@ -162,72 +173,72 @@ if (opcion == 1){
 					        switch (temaSecundario1){
 					        	case 'M':
 					                printf("Mercurio:\n");
-							printf("Radio: 2439640,3825 km/T\n");
-							printf("Distancia al Sol: 5790,387 millones km\n");
-							printf("Formacion: rocosa\n");
-							printf("Color: gris\n\n");
+								printf("Radio: 2439640,3825 km/T\n");
+								printf("Distancia al Sol: 5790,387 millones km\n");
+								printf("Formacion: rocosa\n");
+								printf("Color: gris\n\n");
 				                break;
 				                case 'V':
 					                printf("Venus:\n");
-							printf("Radio: 6051590,9488 km/T\n");
-							printf("Distancia al Sol: 10820,7239 millones km\n");
-							printf("Formacion: rocosa\n");
-							printf("Color: amarillo\n\n");
+								printf("Radio: 6051590,9488 km/T\n");
+								printf("Distancia al Sol: 10820,7239 millones km\n");
+								printf("Formacion: rocosa\n");
+								printf("Color: amarillo\n\n");
 				                break;
 				                case 'T':
 				 	                printf("La Tierra:\n");
-							printf("Radio: 6637815 km/T\n");
-							printf("Distancia al Sol: 14961 millones km\n");
-							printf("Formacion: rocosa\n");
-							printf("Color: azul y blanco\n\n");
+								printf("Radio: 6637815 km/T\n");
+								printf("Distancia al Sol: 14961 millones km\n");
+								printf("Formacion: rocosa\n");
+								printf("Color: azul y blanco\n\n");
 				                break;
 				                case 'R':
 				 	                printf("Marte:\n");
-							printf("Radio: 3397000,53226 km/T\n");
-							printf("Distancia al Sol: 22791,524 millones km\n");
-							printf("Formacion: rocosa\n");
-							printf("Color: rojo\n\n");
+								printf("Radio: 3397000,53226 km/T\n");
+								printf("Distancia al Sol: 22791,524 millones km\n");
+								printf("Formacion: rocosa\n");
+								printf("Color: rojo\n\n");
 				                break;
 				                case 'J':
 				 	                printf("Jupiter:\n");
 				 	                printf("Radio: 714926811,209 km/T\n");
-							printf("Distancia al Sol: 77845,203 millones km\n");
-							printf("Formacion: gaseosa\n");
-							printf("Color: mezcal de colores (gama de colores calidos)\n\n");
+								printf("Distancia al Sol: 77845,203 millones km\n");
+								printf("Formacion: gaseosa\n");
+								printf("Color: mezcal de colores (gama de colores calidos)\n\n");
 				                break;
 				                case 'S':
 				 	                printf("Saturno:\n");
-							printf("Radio: 6026714 9,449 km/T\n");
-							printf("Distancia al Sol: 142679,537 millones km\n");
-							printf("Formacion: gaseosa\n");
-							printf("Color: naranja y blanco\n\n");
+								printf("Radio: 6026714 9,449 km/T\n");
+								printf("Distancia al Sol: 142679,537 millones km\n");
+								printf("Formacion: gaseosa\n");
+								printf("Color: naranja y blanco\n\n");
 				                break;
 				                case 'U':
 				 	                printf("Urano:\n");
-							printf("Radio: 2557254,007 km/T\n");
-							printf("Distancia al Sol: 2871019,191 millones km\n");
-							printf("Formacion: gaseosa\n");
-							printf("Color: verde y azul\n\n");
+								printf("Radio: 2557254,007 km/T\n");
+								printf("Distancia al Sol: 2871019,191 millones km\n");
+								printf("Formacion: gaseosa\n");
+								printf("Color: verde y azul\n\n");
 				                break;
 						case 'N':
 				 	                printf("Neptuno:\n");
-							printf("Radio: 24766363,883 km/T\n");
-							printf("Distancia al Sol: 4498330,069 millones km\n");
-							printf("Formacion: gaseosa\n");
-							printf("Color: azul\n\n");
+								printf("Radio: 24766363,883 km/T\n");
+								printf("Distancia al Sol: 4498330,069 millones km\n");
+								printf("Formacion: gaseosa\n");
+								printf("Color: azul\n\n");
 					
 				                break;
 				                case 'A':
 				 	                printf("Asteroides:\n");
-							printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tama√±os\n\n");
+								printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tamaÒos\n\n");
 				                break;
 				                case 'E':
 				 	                printf("Metioritos:\n");
-							printf("Ciertos asteroides son atraidos hacia la Tierra.\nCuando alcanzan el suelo terrestre, se les llama meteoritos.\n\n");
+								printf("Ciertos asteroides son atraidos hacia la Tierra.\nCuando alcanzan el suelo terrestre, se les llama meteoritos.\n\n");
 				                break;
 				                case 'C':
 				 	                printf("Cometas:\n");
-							printf("Es un nucleo formado por rocas, gases helados y agua.\nEste nucleo esta envuelto en una cola de gas y de polvo\n\n");
+								printf("Es un nucleo formado por rocas, gases helados y agua.\nEste nucleo esta envuelto en una cola de gas y de polvo\n\n");
 				                break;
 				                default:
 				                    printf("\n");
@@ -262,7 +273,7 @@ if (opcion == 1){
 					printf(" de interesantes, escoje entre uno de los siguientes:\n\n");
 					printf("Escoje uno entre los siguientes:\n\n");					
 					printf("-Curiosidad.  (C)\n");
- 		            printf("-¬øComo es?.  (E)\n");
+ 		            printf("-øComo es?.  (E)\n");
  		            printf("-Movimientos.  (M)\n");
  		            printf("-El Sol durante el anyo.  (S)\n");
  		            printf("-Aparicion de la vida.  (A)\n");
@@ -271,7 +282,7 @@ if (opcion == 1){
  		            scanf("%c", &temaSecundario);
 					switch (temaSecundario){
 				        case 'C':
-					        printf("¬øRedonda o plana?\n");
+					        printf("øRedonda o plana?\n");
 					        printf("La Tierra es redonda pero las comunidades cientificas no siempre\n");
 					        printf("se han puesto de acuerdo sobre su forma. Algunos decian que era\n");
 					        printf("redonda, otros que era plana. En la Antiguedad se pensaba que\n");
@@ -309,7 +320,7 @@ if (opcion == 1){
 						
 					        case 'L':
 					                printf("La Luna satelite de la Tierra:\n");
-							printf("Hace varios millones de a√±os, un bolido del espacio habia colisionado  con la Tierra;\n");
+							printf("Hace varios millones de aÒos, un bolido del espacio habia colisionado  con la Tierra;\n");
 							printf("los fragmentos restantes habian dado como resultado la Luna.\n");
 					
 				                break;
@@ -329,7 +340,7 @@ if (opcion == 1){
 				                case 'U':
 				 	                printf("Curiosidades:\n");
 						        printf("Querrias saber un dato curioso...\n");
-				                        printf("Escoje entre tres curiosidades (‚ÄúA‚Äù,‚ÄúB‚Äù y ‚ÄúC‚Äù) o si quiere continuar pulse (N)\n");
+				                        printf("Escoje entre tres curiosidades (ìAî,ìBî y ìCî) o si quiere continuar pulse (N)\n");
 				                        fflush(stdin);
 				                        scanf("%c", &curiosidad);
 				                        if((curiosidad == 'A') || (curiosidad == 'a')) {
@@ -360,7 +371,7 @@ if (opcion == 1){
 								   printf("La Luna es creciente de la Luna nueva hasta la Luna llena y \n");
 								   printf("menguante,desde la luna llena hasta la Luna nueva siguiente.\n");
 								   printf("Durante la fase creciente de la Luna , las plantas crecen mas deprisa.\n");
-								   printf("Es el momento de sembrar semillas y de plantar los √°rboles .\n");
+								   printf("Es el momento de sembrar semillas y de plantar los ·rboles .\n");
 								   printf("Durante la Luna menguante, la luz es mas tenue, las plantas no\n");
 								   printf("se mantienen tan bien.Si cortas el cesped, crecera mas despacio.\n");
 				                        }	
@@ -416,7 +427,7 @@ if (opcion == 1){
 				 	                printf("Esta previsto como proyecto establecer una base en la Luna. Para que las tripulaciones con\n");
 				 	                printf("destino a Marte hicieran escala alli, entre otras funciones. La base incluiria modulos de vivienda y \n");
 				 	                printf("modulos de laboratorio, paneles solares para proporcionar la energia necesaria para disponer de luz y \n");
-							printf("calefaccion. Alli se instalarian hasta una docena de cientificos para investigar la Luna y sus misterios.\n");				
+									printf("calefaccion. Alli se instalarian hasta una docena de cientificos para investigar la Luna y sus misterios.\n");				
 				                break;				                
 				                default:
 				                    printf("\n");
@@ -426,26 +437,30 @@ if (opcion == 1){
 				printf("\n");
 			}    
 	}
-else if (opcion = 2) {
-	printf("Bienvenido al mini juego de preguntas y respuestas sobre el sistema solar y el universo:\n");
-	printf("Registrate:\n");
-	fichero=fopen("listajugadores.txt", "r");
-	if(fichero== NULL){
-		printf("Error al abrir el fichero.\n");
-		return 0;
-	}
-	contadorlineasfichero=0;
-	while (fscanf(fichero, "%s %d", lista[contadorlineasfichero].nombre, &lista[contadorlineasfichero].puntuacion) != EOF){
-		contadorlineasfichero++;
-	}
+// Juego del programa (elegir una respuesta)
+	else if (opcion = 2) {
+				printf("     ----- opcion Juega con Nosotros -----\n\n");
+
+		printf("     Bienvenido al mini juego de 'preguntas y respuestas' sobre el Sistema Solar y el Universo\n\n");
+		printf("     - Registrate:\n");
+		fichero=fopen("listajugadores.txt", "r");
+		if(fichero== NULL){
+			printf("Error al abrir el fichero.\n");
+			return 0;
+		}
+		contadorlineasfichero=0;
+		while (fscanf(fichero, "%s %d", lista[contadorlineasfichero].nombre, &lista[contadorlineasfichero].puntuacion) != EOF){
+			contadorlineasfichero++;
+		}
+		
 	fclose(fichero);
 	fflush(stdin);
 	gets(lista[contadorlineasfichero+1].nombre);
 	lista[contadorlineasfichero+1].puntuacion==0;
 		printf("Antes de empezar con la ronda de preguntas debes saber que la respuesta \n debes ponerla con la letra en minuscula que corresponde y sin parentesis\n");
 		
-		printf("1.¬øComo y cuando se creo el universo?¬øY el  sol?\n");
-		printf("a)Hace 7.000 millones de anyos de un exploxion llamada ‚ÄúBig Bang‚Äù\nb)Hace 14.00 millones de anyos en una explosion llamada ‚ÄúBig Bang‚Äù\nc)hace 8.000 millones de anyos en un explosion llamada ‚ÄúBan Ban‚Äù\n");
+		printf("     1.øComo y cuando se creo el universo? øY el sol?\n\n");
+		printf("   a) Hace 7.000 millones de anyos de un exploxion llamada 'Big Bang'\n   b) Hace 14.00 millones de anyos en una explosion llamada 'Big Bang'\n   c) hace 8.000 millones de anyos en un explosion llamada 'Big Bang'\n");
 		fflush(stdin);
 		scanf("%c",&opcion);
 		
@@ -455,8 +470,8 @@ else if (opcion = 2) {
 			printf("Incorrecto\n");
 		}
 		
-		printf("2.¬øQue es una galaxia?\n");
-		printf("a)Un conjunto de estrellas, planetas, cometas, nubes de gas y de polvo\nb)Un conjunto de gases y polvo que forman estrellas\nc)Un conjunto de piedras y arena\n");
+		printf("     2.øQue es una galaxia?\n\n");
+		printf("   a) Un conjunto de estrellas, planetas, cometas, nubes de gas y de polvo\n   b) Un conjunto de gases y polvo que forman estrellas\n   c) Un conjunto de piedras y arena\n");
 		fflush(stdin);
 		scanf("%c",&opcion);
 		
@@ -466,8 +481,8 @@ else if (opcion = 2) {
 			printf("Incorrecto\n");
 		}
 		
-		printf("3.¬øQue civilizacion fue la primera en interesarse por el universo?\n");
-		printf("a)Aztecas\nb)Incas\nc)Mayas\n");
+		printf("     3.øQue civilizacion fue la primera en interesarse por el universo?\n\n");
+		printf("   a) Aztecas\n   b) Incas\n   c) Mayas\n");
 		fflush(stdin);
 		scanf("%c",&opcion);
 		if(opcion=='c'){
@@ -476,8 +491,8 @@ else if (opcion = 2) {
 			printf("Incorrecto\n");
 		}
 		
-		printf("4.Las constelaciones no cambian de posicion respecto del horizonte\n");
-		printf("a)Verdadero\nb)Falso\n");
+		printf("     4.Las constelaciones no cambian de posicion respecto del horizonte\n\n");
+		printf("   a) Verdadero\n   b) Falso\n");
 		fflush(stdin);
 		scanf("%c",&opcion);
 		if(opcion=='b'){
@@ -486,8 +501,9 @@ else if (opcion = 2) {
 			printf("Incorrecto\n");
 		}
 	
+	
 	fichero=fopen("listajugadores.txt", "w");
-	if(fichero== NULL){
+	if(fichero == NULL){
 		printf("Error al abrir el fichero.\n");
 		return 0;
 	}
@@ -496,15 +512,22 @@ else if (opcion = 2) {
 	}
 	fclose(fichero);
 	
-	
-	
 }
-printf("¬øQuieres continuar? Pulse 1 si quiere volver al menu de inicio.\n");
-scanf("%d", &x);
+	printf("------------------------------------------------------------------------------------------------------------------------");
+	printf("|        øQuieres continuar?                                                                                           |");
+	printf("|           -Pulse 1 si quiere volver al menu de inicio                                                                |");
+	printf("|           -Pulse 2 si quiere cerrar el programa                                                                      |");
+	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	scanf("%d", &x);
 }
-while(x==1);
- 	
-printf("Fin del programa.\n");
-banner2();
+	while(x==1);
+// Fin del programa
+ 	printf("  ----------------------------------------------------------\n");
+	printf("  #########  Gracias por confiar en nosotros ;)  #########\n");
+	printf("  #################  Hasta la proxima!!  #################\n");
+ 	printf("  ----------------------------------------------------------\n\n");
+	
 return 0;
+
 }
+
