@@ -91,12 +91,12 @@ int main() {
 				        break;
 				        case 'S':
 				        	printf("     ***  El nacimiento del Sol  ***\n\n");
-							printf("  El sol nacio hace 5.000 millones de años en una inmensa nube de gas y de polvos y\n  se puso a girar muy deprisa sobre si mismo.\n");
+							printf("  El sol nacio hace 5.000 millones de aÃ±os en una inmensa nube de gas y de polvos y\n  se puso a girar muy deprisa sobre si mismo.\n");
 							printf("  El centro, muy caliente, se puso a brillar cada vez mas: nacio el Sol.\n  A su alrededor, el polvo y los gases restantes continuaron girando.\n\n");
 				        break;
 				        case 'P':
 				 	        printf("     ***  La formacion de los planetas  ***\n\n");
-				 	        printf("En ese disco que giraba alrededor del Sol, donde la temperatura es increiblemente alta,\nlos planetas se formaron varios millones de años despues.\n\n");
+				 	        printf("En ese disco que giraba alrededor del Sol, donde la temperatura es increiblemente alta,\nlos planetas se formaron varios millones de aÃ±os despues.\n\n");
 				        break;
 			            default:
 				            printf("\n");
@@ -126,7 +126,7 @@ int main() {
 							if((curiosidad == 'S') || (curiosidad == 's')) {
 								printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
 								printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
-								printf("perseidas.¡CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
+								printf("perseidas.Â¡CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
 								} else if ((curiosidad == 'N') || (curiosidad == 'n')) {
 									printf("Pues tu te lo pierdes :)\n\n");
 							} else {
@@ -236,7 +236,7 @@ int main() {
 				                break;
 				                case 'A':
 				 	                printf("Asteroides:\n");
-									printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tamaños\n\n");
+									printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tamaÃ±os\n\n");
 				                break;
 				                case 'E':
 				 	                printf("Metioritos:\n");
@@ -289,7 +289,7 @@ int main() {
 					switch (temaSecundario1){
 					    case 'L':
 					        printf("     ***  La Luna satelite de la Tierra  ***\n\n");
-							printf("Hace varios millones de años, un bolido del espacio habia colisionado  con la Tierra;\n");
+							printf("Hace varios millones de aÃ±os, un bolido del espacio habia colisionado  con la Tierra;\n");
 							printf("los fragmentos restantes habian dado como resultado la Luna.\n");
 				        break;
 				        case 'S':
@@ -306,7 +306,7 @@ int main() {
 				        case 'U':
 				 	        printf("Curiosidades:\n");
 						    printf("Querrias saber un dato curioso...\n");
-				            printf("Escoje entre tres curiosidades (A,B y C) o si quiere continuar pulse (N)\n");
+				            printf("Escoje entre tres curiosidades (Â?AÂ?,Â?BÂ? y Â?CÂ?) o si quiere continuar pulse (N)\n");
 				            fflush(stdin);
 				            scanf("%c", &curiosidad);
 				            
@@ -337,7 +337,7 @@ int main() {
 								printf("La Luna es creciente de la Luna nueva hasta la Luna llena y \n");
 								printf("menguante,desde la luna llena hasta la Luna nueva siguiente.\n");
 								printf("Durante la fase creciente de la Luna , las plantas crecen mas deprisa.\n");
-								printf("Es el momento de sembrar semillas y de plantar los árboles .\n");
+								printf("Es el momento de sembrar semillas y de plantar los Ã¡rboles .\n");
 								printf("Durante la Luna menguante, la luz es mas tenue, las plantas no\n");
 								printf("se mantienen tan bien.Si cortas el cesped, crecera mas despacio.\n");
 				            } else if ((curiosidad == 'N') || (curiosidad == 'n')) {
@@ -442,7 +442,7 @@ int main() {
 		for(i=0;i<4;i++) {
 			switch(rand()%4) {
 			case 0:{
-				printf("     �Como y cuando se creo el universo? �Y el sol?\n\n");
+				printf("     ¿Como y cuando se creo el universo? ¿Y el sol?\n\n");
 				printf("   a) Hace 7.000 millones de anyos de un exploxion llamada 'Big Bang'\n   b) Hace 14.00 millones de anyos en una explosion llamada 'Big Bang'\n   c) hace 8.000 millones de anyos en un explosion llamada 'Big Bang'\n");
 				fflush(stdin);
 				scanf("%c",&opcion);
@@ -456,7 +456,7 @@ int main() {
 			break;
 			}
 			case 1:{
-				printf("     �Que es una galaxia?\n\n");
+				printf("     ¿Que es una galaxia?\n\n");
 				printf("   a) Un conjunto de estrellas, planetas, cometas, nubes de gas y de polvo\n   b) Un conjunto de gases y polvo que forman estrellas\n   c) Un conjunto de piedras y arena\n");
 				fflush(stdin);
 				scanf("%c",&opcion);
@@ -470,7 +470,7 @@ int main() {
 			break;
 			}
 			case 2:{
-				printf("     �Que civilizacion fue la primera en interesarse por el universo?\n\n");
+				printf("     ¿Que civilizacion fue la primera en interesarse por el universo?\n\n");
 				printf("   a) Aztecas\n   b) Incas\n   c) Mayas\n");
 				fflush(stdin);
 				scanf("%c",&opcion);
@@ -483,6 +483,19 @@ int main() {
 			break;
 			}
 			case 3:{
+				printf("     ¿Que forma tienen las constelaciones?\n\n");
+				printf("   a) La Osa Mayor de cuadrado y Casiopea forma de H\n   b) Casiopea forma de W y la Osa Mayor forma de cacerola\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='b'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
+			}
+			case 4:{
 				printf("     Las constelaciones no cambian de posicion respecto del horizonte\n\n");
 				printf("   a) Verdadero\n   b) Falso\n");
 				fflush(stdin);
@@ -495,33 +508,135 @@ int main() {
 				}
 			break;
 			}
-			case 4:{
-				
-				break;
-			}
 			case 5:{
-				
-				break;
+				printf("     Cuantos dias tarda en dar una vuelta el sol sobre si mismo? \n\n");
+				printf("   a) 25\n   b) 28\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='a'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
 			}
 			case 6:{
-				
-				break;
+				printf("     Cuanto mas bajamos el nucleo de la tierra mas frio hace?\n\n");
+				printf("   a) Verdadero\n   b) Falso\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='b'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
 			}
 			case 7:{
-				
-				break;
+				printf("     Que es la corteza terrestre?\n\n");
+				printf("   a) es una capa de rocas situada bajo los oceanos y continente\n   b) es un capa de aire situada encima de los oceanos y continentes\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='a'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
 			}
 			case 8:{
-				
-				break;
+				printf("     Cuantas caras tiene la Luna en un mes?\n\n");
+				printf("   a) 7\n   b) 10\n   c) 8\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='c'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
 			}
 			case 9:{
-				
-				break;
+				printf("     Con que se puede observar los crateres de la superficie de la luna?\n\n");
+				printf("   a) luneta astronomica\n   b) gafas de sol\n   c) casco\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='b'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
 			}
 			case 10:{
-				
-				break;
+				printf("     Cuantos planetas existen?\n\n");
+				printf("   a) 14\n   b) 8\n   c) 10\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='b'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
+			}
+			case 11:{
+				printf("     Cuantos kilometros aon una vuelta de la tierra?\n\n");
+				printf("   a) 80000\n   b) 60.000\n   c) 40.000\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='c'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
+			}
+			case 12:{
+				printf("     La Tierra hace descansos cada 24h?\n\n");
+				printf("   a) Verdadero\n   b) Falso\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='b'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
+			}
+			case 13:{
+				printf("     \n\n");
+				printf("   a) Gira la Tierra al rededor de sol?\n   b) Gira el sol alrededor de la Tierra?\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='a'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
+			}
+			case 14:{
+				printf("     Que aparecio antes la vida o la tierra?\n\n");
+				printf("   a) La Tierra\n   b) La vida\n");
+				fflush(stdin);
+				scanf("%c",&opcion);
+				if(opcion=='a'){
+					printf("Correcto :)\n");
+					contador++;
+				}else{
+					printf("Incorrecto\n");
+				}
+			break;
 			}
 		}
 		}
@@ -529,7 +644,7 @@ int main() {
 	
 	}
 	printf("------------------------------------------------------------------------------------------------------------------------");
-	printf("|        �Quieres continuar?                                                                                           |");
+	printf("|        ¿Quieres continuar?                                                                                           |");
 	printf("|           -Pulse 1 si quiere volver al menu de inicio                                                                |");
 	printf("|           -Pulse 2 si quiere cerrar el programa                                                                      |");
 	printf("------------------------------------------------------------------------------------------------------------------------\n");
@@ -543,4 +658,3 @@ int main() {
 return 0;
 
 }
-
