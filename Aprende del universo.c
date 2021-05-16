@@ -439,8 +439,8 @@ int main() {
 		
 		printf("Antes de empezar con la ronda de preguntas debes saber que la respuesta \n debes ponerla con la letra en minuscula que corresponde y sin parentesis\n");
 		
-		for(i=0;i<4;i++) {
-			switch(rand()%4) {
+		for(i=0;i<5;i++) {
+			switch(rand()%15) {
 			case 0:{
 				printf("     ¿Como y cuando se creo el universo? ¿Y el sol?\n\n");
 				printf("   a) Hace 7.000 millones de anyos de un exploxion llamada 'Big Bang'\n   b) Hace 14.00 millones de anyos en una explosion llamada 'Big Bang'\n   c) hace 8.000 millones de anyos en un explosion llamada 'Big Bang'\n");
@@ -643,11 +643,11 @@ int main() {
 	
 	
 	}
-	printf("------------------------------------------------------------------------------------------------------------------------");
-	printf("|        ¿Quieres continuar?                                                                                           |");
+	printf("-----------------------------------------------------------------------------------------------------------------------\n");
+	printf("|        Quieres continuar?                                                                                            |");
 	printf("|           -Pulse 1 si quiere volver al menu de inicio                                                                |");
 	printf("|           -Pulse 2 si quiere cerrar el programa                                                                      |");
-	printf("------------------------------------------------------------------------------------------------------------------------\n");
+	printf("-----------------------------------------------------------------------------------------------------------------------\n");
 	scanf("%d", &x);
 }while(x==1);
 	
