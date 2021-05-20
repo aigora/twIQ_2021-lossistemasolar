@@ -689,7 +689,7 @@ void luna() {
 			scanf("%c", &curiosidad);
 				            
 			if((curiosidad == 'A') || (curiosidad == 'a')) {
-				printf("La luna y el sol a veces juegan al escondite , lo que da lugar \n");
+				printf("La luna y el Sol a veces juegan al escondite , lo que da lugar \n");
 				printf("a los eclipses.Estos pueden ser totales o parciales.\n");
 				printf("Cuando la Luna pasa tenemos un eclipse Solar.Si el  \n");
 				printf("eclipse es total, los astro estan perfectamente alineados.\n\n");
