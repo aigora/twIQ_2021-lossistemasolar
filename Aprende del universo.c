@@ -25,6 +25,7 @@ void bannerInicio();
 void bannerFinal();
 void planeta();
 void universo();
+void estrella();
 void sistemaSolar();
 void planetas();
 void luna();
@@ -484,6 +485,7 @@ void universo() {
 				}
 			break;
 			case 'S':
+				estrella();
 				printf("     ***  El nacimiento del Sol  ***\n\n");
 				printf("  El sol nacio hace 5.000 millones de aÃ?Â±os en una inmensa nube de gas y de polvos y\n  se puso a girar muy deprisa sobre si mismo.\n");
 				printf("  El centro, muy caliente, se puso a brillar cada vez mas: nacio el Sol.\n  A su alrededor, el polvo y los gases restantes continuaron girando.\n\n");
@@ -683,7 +685,22 @@ void planetas() {
 				printf("\n");
 		}
 }
-
+void estrella(){
+	printf("____________0000_______\n");
+	printf("___________000000____\n");
+	printf("__________00000000______\n");
+	printf("________000000000000_________\n");
+	printf("00000000000000000000000000000__\n");
+	printf("__0000000000_000_0000000000__\n");
+	printf("____00000000_000_00000000___\n");
+	printf("______000000_000_000000___\n");
+	printf("_______00000_000_00000___\n");
+	printf("_______000000000000000______\n");
+	printf("______00000000000000000_______\n");
+	printf("_____000000000_000000000_______\n");
+	printf("____0000000_______0000000_________\n");
+	printf("\n\n");
+}
 void luna() {
 	char tema, curiosidad;
 	int i;
