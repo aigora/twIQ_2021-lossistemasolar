@@ -661,7 +661,7 @@ void luna() {
    	printf("      -Caras de la Luna.  (C)\n");
    	printf("      -Escondite.  (E)\n");
    	printf("      -Jugando con los oceanos.  (J)\n");
-   	printf("      -Curiosidades.  (U)\n");
+   	printf("      -Curiosidad.  (U)\n");
   	printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
  	fflush(stdin);
 	scanf("%c", &tema);
