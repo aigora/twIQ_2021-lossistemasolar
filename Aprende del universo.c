@@ -28,6 +28,7 @@ void universo();
 void estrella();
 void sistemaSolar();
 void planetas();
+void Dibujo_Luna();
 void luna();
 void espacio();
 void ordenarBurbuja();
@@ -701,6 +702,28 @@ void estrella(){
 	printf("____0000000_______0000000_________\n");
 	printf("\n\n");
 }
+void Dibujo_Luna(){
+	printf("___________0\n");
+	printf("_________000\n");
+	printf("_______0000\n");
+	printf("______0000\n");
+	printf("____00000\n");
+	printf("___00000\n");
+	printf("__000000\n");
+	printf("_0000000\n");
+	printf("_0000000\n");
+	printf("_00000000\n");
+	printf("_00000000000\n");
+	printf("_0000000000000                   0\n");
+	printf("__00000000000000                00\n");
+	printf("___000000000000000             000\n");
+	printf("____000000000000000          0000\n");
+	printf("______000000000000000     000000\n");
+	printf("________000000000000000000000\n");
+	printf("__________00000000000000000\n");
+	printf("______________000000000\n");
+	printf("\n");
+}
 void luna() {
 	char tema, curiosidad;
 	int i;
@@ -709,6 +732,7 @@ void luna() {
 	}
 	system("cls");
 	system("color 0F");
+	Dibujo_Luna();
 	printf("     ###  La Luna  ###\n\n");
 	printf(" Escoje uno entre los siguientes temas sobre la Luna:\n");					
 	printf("      -La Luna satelite de la Tierra.  (L)\n");
