@@ -21,14 +21,18 @@ jugadores principal;
 jugadores mejor;
 
 // Definir funciones
+// Dibujos
 void bannerInicio();
 void bannerFinal();
 void planeta();
-void universo();
+void tierra();
+void Dibujo_Luna();
 void estrella();
+
+// Informacion
+void universo();
 void sistemaSolar();
 void planetas();
-void Dibujo_Luna();
 void luna();
 void espacio();
 void ordenarBurbuja();
@@ -373,20 +377,24 @@ system("color 0B");
 // Declaramos las funciones banner
 void bannerInicio() {
 	system("color 0B");
-    printf("             		 				######################################################\n");
-    printf("            		 				######################################################\n");
-    printf("            		 				####                                              ####\n");
-    printf("            		 				#### Bienvenido a Aprender sobre el Sistema Solar ####\n");
-    printf("            		 				####                                              ####\n");
-    printf("             		 				######################################################\n");
-    printf("            		 				######################################################\n");
+	printf("						 		_________________________________\n");
+    printf("             		 	  			________|                               |_______ \n");
+    printf("            		 				        | Bienvenido a Aprender sobre   |        \n");
+    printf("            		 			 	        |       el Sistema Solar        |       \n");
+    printf("            		 				        |_______________________________|       \n");
+    printf("            		 				__________)           	             (__________  \n");
+
     printf("\n\n");
 
 }
 
 void bannerFinal() {
 	system("color 0B");
+	
 	printf("  							----------------------------------------------------------\n");
+	printf("  							---------------------------|||----------------------------\n");
+	printf("  							--------------------------(o o)---------------------------\n");
+	printf("  									 ------ooO-(_)-Ooo------  \n");
 	printf("  							#########  Gracias por confiar en nosotros ;)  ###########\n");
 	printf("  							#################  Hasta la proxima!!  ###################\n");
  	printf("  							----------------------------------------------------------\n\n");
@@ -421,31 +429,73 @@ void planeta(){
 }
 
 void tierra() {
+	
 	printf("						                             @@@@@@@@@@@@@@@                      \n");    
-    printf("						                        @@@@@@@@##########@@@@@@@                  \n");    
-    printf("						                      @@@@@@@@######@######@@@@@@@@          @     \n");         
-    printf("						                   @@@@@#########################@@@@@      @@@    \n");          
-    printf("						                @@@@######@#########################&@@@@    @     \n");           
+    printf("						                        @@@@@@@@@@@@@@@@@@@@@@@@@                  \n");    
+    printf("						                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@                \n");         
+    printf("						                   @@@@@#########################@@@@@             \n");          
+    printf("						                @@@@######@#########################&@@@@          \n");           
     printf("						              @@@@#####################################@@@@        \n");          
     printf("						            @@@@###########################@#############@@@@      \n");          
     printf("						           @@@############################################&@@@     \n");          
     printf("						          @@@######################################@#########@@@   \n");        
-    printf("						        @@@@#######@############################@##############@@@@   \n");          
-    printf("						     @@@@@@@######@@@###############################@@@@@#####@@@@@@@    \n");         
-    printf("						 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  \n");          
-    printf("						 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  \n");          
-    printf("						     @@@@@@@######@@@###############################@@@@@#####@@@@@@@    \n");         
-    printf("						         @@@#######@#################################@########@@@@   \n");          
+    printf("						         @@@#######@#################################@########@@@      \n");          
+    printf("						        @@@@######@@@###############################@@@@@#####@@@@    \n");         
+    printf("						        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   \n");          
+    printf("						        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   \n");          
+    printf("						        @@@@######@@@###############################@@@@@#####@@@@    \n");         
+    printf("						         @@@#######@#################################@########@@@      \n");          
     printf("						          @@@###############################################@@@    \n");        
     printf("						           @@@############################################&@@@     \n");          
     printf("						            @@@@#########@###############################@@@@      \n");          
-    printf("						       @      @@@@#####################################@@@@        \n");          
-    printf("						      @@@       @@@@##########################@@####&@@@@          \n");           
+    printf("						              @@@@#####################################@@@@        \n");          
+    printf("						                @@@@##########################@@####&@@@@          \n");           
     printf("						                   @@@@@#########################@@@@@             \n");          
-    printf("						               @      @@@@@@@@#############@@@@@@@@        @       \n");         
-    printf("						              @@@       @@@@@@@@##########@@@@@@@                  \n");    
-    printf("						               @             @@@@@@@@@@@@@@@                      \n\n\n");    
+    printf("						                      @@@@@@@@@@@@@@@@@@@@@@@@@@@@@                \n");         
+    printf("						                        @@@@@@@@@@@@@@@@@@@@@@@@@                  \n");    
+	printf("						                             @@@@@@@@@@@@@@@                      \n");    
 }
+
+void estrella(){
+	printf("						        ____________0000_______\n");
+	printf("						        ___________000000____\n");
+	printf("						        __________00000000______\n");
+	printf("						        ________000000000000_________\n");
+	printf("						        00000000000000000000000000000__\n");
+	printf("						        __0000000000_000_0000000000__\n");
+	printf("						        ____00000000_000_00000000___\n");
+	printf("						        ______000000_000_000000___\n");
+	printf("						        _______00000_000_00000___\n");
+	printf("						        _______000000000000000______\n");
+	printf("						        ______00000000000000000_______\n");
+	printf("						        _____000000000_000000000_______\n");
+	printf("						        ____0000000_______0000000_________\n");
+	printf("\n\n");
+}
+
+void Dibujo_Luna(){
+	printf("						        ___________0\n");
+	printf("						        _________000\n");
+	printf("						        _______0000\n");
+	printf("						        ______0000\n");
+	printf("						        ____00000\n");
+	printf("						        ___00000\n");
+	printf("						        __000000\n");
+	printf("						        _0000000\n");
+	printf("						        _0000000\n");
+	printf("						        _00000000\n");
+	printf("						        _00000000000\n");
+	printf("						        _00000000000                     0\n");
+	printf("						        __00000000000                   00\n");
+	printf("						        ___000000000000                000\n");
+	printf("						        ____000000000000             0000\n");
+	printf("						        ______000000000000        000000\n");
+	printf("						        ________000000000000000000000\n");
+	printf("						        __________00000000000000000\n");
+	printf("						        ______________000000000\n");
+	printf("\n");
+}
+
 // Declaramos las funciones con la informacion
 void universo() {
 	int i;
@@ -456,6 +506,7 @@ void universo() {
 	}
 	system("cls");
 	system("color 0D");
+	estrella();
 	printf("     ###  El Universo  ###\n\n");
 	printf("  El Universo se creo hace 14.000 millones de anyos tras una explosion gigante llamada Big Bang,\n  que significa <la gran explosion>.\n");
 	printf("\n  El universo es enorme, hemos seleccionado los temas mas interesantes.\n");
@@ -486,7 +537,6 @@ void universo() {
 				}
 			break;
 			case 'S':
-				estrella();
 				printf("     ***  El nacimiento del Sol  ***\n\n");
 				printf("  El sol nacio hace 5.000 millones de aÃ?Â±os en una inmensa nube de gas y de polvos y\n  se puso a girar muy deprisa sobre si mismo.\n");
 				printf("  El centro, muy caliente, se puso a brillar cada vez mas: nacio el Sol.\n  A su alrededor, el polvo y los gases restantes continuaron girando.\n\n");
@@ -508,6 +558,7 @@ void sistemaSolar() {
 	}
 	system("cls");
 	system("color 06");
+	estrella();
 	printf("     ###  El Sistema Solar  ###\n\n");
 	printf("  Escoje uno entre los siguientes:\n");				
 	printf("      -Observando el cielo.  (C)\n");
@@ -597,6 +648,7 @@ void planetas() {
 		printf("  \n");
 	}
 	system("cls");
+	tierra();
 	printf("     ***  Los planetas y demas cuerpos estelares  ***\n\n");
 	printf(" Escoje uno entre los siguientes:\n");					
 	printf("      -Mercurio.  (M)\n");
@@ -686,44 +738,7 @@ void planetas() {
 				printf("\n");
 		}
 }
-void estrella(){
-	printf("____________0000_______\n");
-	printf("___________000000____\n");
-	printf("__________00000000______\n");
-	printf("________000000000000_________\n");
-	printf("00000000000000000000000000000__\n");
-	printf("__0000000000_000_0000000000__\n");
-	printf("____00000000_000_00000000___\n");
-	printf("______000000_000_000000___\n");
-	printf("_______00000_000_00000___\n");
-	printf("_______000000000000000______\n");
-	printf("______00000000000000000_______\n");
-	printf("_____000000000_000000000_______\n");
-	printf("____0000000_______0000000_________\n");
-	printf("\n\n");
-}
-void Dibujo_Luna(){
-	printf("___________0\n");
-	printf("_________000\n");
-	printf("_______0000\n");
-	printf("______0000\n");
-	printf("____00000\n");
-	printf("___00000\n");
-	printf("__000000\n");
-	printf("_0000000\n");
-	printf("_0000000\n");
-	printf("_00000000\n");
-	printf("_00000000000\n");
-	printf("_0000000000000                   0\n");
-	printf("__00000000000000                00\n");
-	printf("___000000000000000             000\n");
-	printf("____000000000000000          0000\n");
-	printf("______000000000000000     000000\n");
-	printf("________000000000000000000000\n");
-	printf("__________00000000000000000\n");
-	printf("______________000000000\n");
-	printf("\n");
-}
+
 void luna() {
 	char tema, curiosidad;
 	int i;
