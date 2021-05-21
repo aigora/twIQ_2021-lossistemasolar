@@ -35,7 +35,6 @@ int main() {
 system("color 0B");
     
 // Variables necesarias
-	
 	int  x, n=1, i=0;
 	char tema;
 	
@@ -47,7 +46,6 @@ system("color 0B");
 	int contador=0;
 	char opcion;
 	srand(time(NULL));
-
 	
 	time_t t;
   	struct tm *tm;
@@ -58,7 +56,6 @@ system("color 0B");
 	strftime(fechayhora, 100, "%d/%m/%Y\t\t%H:%M\t\t", tm);
 	printf ("	%s\n", fechayhora);
 	    
-
 	do {
 		bannerInicio();
 		planeta();
@@ -106,8 +103,6 @@ system("color 0B");
 		fflush(stdin);
 		printf("     ----- opcion Juega con Nosotros -----\n\n");
 
-	
-		// Leer fichero caracter a caracter
 		f = fopen("listajugadores.txt","r"); // --> Ruta relativa
 	
 		if (f== NULL) {
@@ -115,9 +110,8 @@ system("color 0B");
 			return 0;
 		}
 		
-		
 		i=0;
-		printf("								## Lista de los mejores jugadores ##\n\n");
+		printf("								## Lista de los jugadores ##\n\n");
 		while(i<5){
 			fscanf(f, "%s %d", jugador[i].nombre, &jugador[i].puntuacion);
 			
@@ -130,7 +124,6 @@ system("color 0B");
 		}		
 		rewind(f);
 		
-		// 3. Cerrar el fichero
 		fclose(f);
 		
 		printf("	Introduce nombre de usuario: ");
@@ -372,13 +365,12 @@ system("color 0B");
 	bannerFinal();
 	planeta();
  	
-return 0;
-
+	return 0;
 }
 
 // Declaramos las funciones banner
 void bannerInicio() {
-
+	system("color 0B");
     printf("             		 				######################################################\n");
     printf("            		 				######################################################\n");
     printf("            		 				####                                              ####\n");
@@ -391,6 +383,7 @@ void bannerInicio() {
 }
 
 void bannerFinal() {
+	system("color 0B");
 	printf("  							----------------------------------------------------------\n");
 	printf("  							#########  Gracias por confiar en nosotros ;)  ###########\n");
 	printf("  							#################  Hasta la proxima!!  ###################\n");
@@ -425,10 +418,42 @@ void planeta(){
 
 }
 
+void tierra() {
+	printf("						                             @@@@@@@@@@@@@@@                      \n");    
+    printf("						                        @@@@@@@@##########@@@@@@@                  \n");    
+    printf("						                      @@@@@@@@######@######@@@@@@@@          @     \n");         
+    printf("						                   @@@@@#########################@@@@@      @@@    \n");          
+    printf("						                @@@@######@#########################&@@@@    @     \n");           
+    printf("						              @@@@#####################################@@@@        \n");          
+    printf("						            @@@@###########################@#############@@@@      \n");          
+    printf("						           @@@############################################&@@@     \n");          
+    printf("						          @@@######################################@#########@@@   \n");        
+    printf("						        @@@@#######@############################@##############@@@@   \n");          
+    printf("						     @@@@@@@######@@@###############################@@@@@#####@@@@@@@    \n");         
+    printf("						 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  \n");          
+    printf("						 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  \n");          
+    printf("						     @@@@@@@######@@@###############################@@@@@#####@@@@@@@    \n");         
+    printf("						         @@@#######@#################################@########@@@@   \n");          
+    printf("						          @@@###############################################@@@    \n");        
+    printf("						           @@@############################################&@@@     \n");          
+    printf("						            @@@@#########@###############################@@@@      \n");          
+    printf("						       @      @@@@#####################################@@@@        \n");          
+    printf("						      @@@       @@@@##########################@@####&@@@@          \n");           
+    printf("						                   @@@@@#########################@@@@@             \n");          
+    printf("						               @      @@@@@@@@#############@@@@@@@@        @       \n");         
+    printf("						              @@@       @@@@@@@@##########@@@@@@@                  \n");    
+    printf("						               @             @@@@@@@@@@@@@@@                      \n\n\n");    
+}
 // Declaramos las funciones con la informacion
 void universo() {
+	int i;
 	char tema, curiosidad;
+	
+	for(i=0;i<300;i++) {
+		printf("  \n");
+	}
 	system("cls");
+	system("color 0D");
 	printf("     ###  El Universo  ###\n\n");
 	printf("  El Universo se creo hace 14.000 millones de anyos tras una explosion gigante llamada Big Bang,\n  que significa <la gran explosion>.\n");
 	printf("\n  El universo es enorme, hemos seleccionado los temas mas interesantes.\n");
@@ -460,12 +485,12 @@ void universo() {
 			break;
 			case 'S':
 				printf("     ***  El nacimiento del Sol  ***\n\n");
-				printf("  El sol nacio hace 5.000 millones de aÃ±os en una inmensa nube de gas y de polvos y\n  se puso a girar muy deprisa sobre si mismo.\n");
+				printf("  El sol nacio hace 5.000 millones de a�?±os en una inmensa nube de gas y de polvos y\n  se puso a girar muy deprisa sobre si mismo.\n");
 				printf("  El centro, muy caliente, se puso a brillar cada vez mas: nacio el Sol.\n  A su alrededor, el polvo y los gases restantes continuaron girando.\n\n");
 			break;
 			case 'P':
 				printf("     ***  La formacion de los planetas  ***\n\n");
-				printf("En ese disco que giraba alrededor del Sol, donde la temperatura es increiblemente alta,\nlos planetas se formaron varios millones de aÃ±os despues.\n\n");
+				printf("En ese disco que giraba alrededor del Sol, donde la temperatura es increiblemente alta,\nlos planetas se formaron varios millones de a�?±os despues.\n\n");
 			break;
 			default:
 				printf("\n");
@@ -475,7 +500,11 @@ void universo() {
 void sistemaSolar() {
 	char tema, curiosidad;
 	int i=0;
+	for(i=0;i<300;i++) {
+		printf("  \n");
+	}
 	system("cls");
+	system("color 06");
 	printf("     ###  El Sistema Solar  ###\n\n");
 	printf("  Escoje uno entre los siguientes:\n");				
 	printf("      -Observando el cielo.  (C)\n");
@@ -499,7 +528,7 @@ void sistemaSolar() {
 				if((curiosidad == 'S') || (curiosidad == 's')) {
 					printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
 					printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
-					printf("perseidas.Â¡CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
+					printf("perseidas.�?¡CUIDADO! Si miras un eclipse, que sea con gafas especiales.\n\n");								
 				}else if ((curiosidad == 'N') || (curiosidad == 'n')) {
 					printf("Pues tu te lo pierdes :)\n\n");
 				}else {
@@ -559,7 +588,11 @@ void sistemaSolar() {
 }
 
 void planetas() {
+	int i;
 	char tema, curiosidad;
+	for(i=0;i<300;i++) {
+		printf("  \n");
+	}
 	system("cls");
 	printf("     ***  Los planetas y demas cuerpos estelares  ***\n\n");
 	printf(" Escoje uno entre los siguientes:\n");					
@@ -636,7 +669,7 @@ void planetas() {
 			break;
 			case 'A':
 				printf("Asteroides:\n");
-				printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tamaÃ±os\n\n");
+				printf("Son unos bloques de rocas y de metales que giran alrededor del Sol.\nTienen diferentes tama�?±os\n\n");
 			break;
 			case 'E':
 				printf("Metioritos:\n");
@@ -653,7 +686,12 @@ void planetas() {
 
 void luna() {
 	char tema, curiosidad;
+	int i;
+	for(i=0;i<300;i++) {
+		printf("  \n");
+	}
 	system("cls");
+	system("color 0F");
 	printf("     ###  La Luna  ###\n\n");
 	printf(" Escoje uno entre los siguientes temas sobre la Luna:\n");					
 	printf("      -La Luna satelite de la Tierra.  (L)\n");
@@ -661,14 +699,14 @@ void luna() {
    	printf("      -Caras de la Luna.  (C)\n");
    	printf("      -Escondite.  (E)\n");
    	printf("      -Jugando con los oceanos.  (J)\n");
-   	printf("      -Curiosidad.  (U)\n");
+   	printf("      -Curiosidades.  (U)\n");
   	printf("(RECORDATORIO: Introduce el caracter en mayuscula)\n");
  	fflush(stdin);
 	scanf("%c", &tema);
 	switch (tema){
     	case 'L':
 			printf("     ***  La Luna satelite de la Tierra  ***\n\n");
-			printf("Hace varios millones de aÃ±os, un bolido del espacio habia colisionado  con la Tierra;\n");
+			printf("Hace varios millones de a�?±os, un bolido del espacio habia colisionado  con la Tierra;\n");
 			printf("los fragmentos restantes habian dado como resultado la Luna.\n");
 		break;
 		case 'S':
@@ -683,7 +721,8 @@ void luna() {
 			printf("-Luna nueva\n-Media Luna\n-Cuarto creciente(dos cada una con la sombra en un lado distinto)\n-Luna llena\n-Cuarto menguante\n-Luna menguante\n");
 	    break;
 	    case 'E':
-	    	printf("La luna y el Sol a veces juegan al escondite , lo que da lugar \n");
+	    	printf("     ***  Escondite  ***\n\n");
+	    	printf("La luna y el Sol a veces juegan al escondite, lo que da lugar \n");
 			printf("a los eclipses.Estos pueden ser totales o parciales.\n");
 			printf("Cuando la Luna pasa tenemos un eclipse Solar.Si el  \n");
 			printf("eclipse es total, los astro estan perfectamente alineados.\n\n");
@@ -699,6 +738,7 @@ void luna() {
 			printf("Estos se deben a los rayos de Sol que le llegan .Este fenomeno puede durar dos horas.\n\n");
 	    break;
 		case 'J':
+			printf("     ***  Jugando con los oceanos  ***\n\n");
 		    printf("La Luna juega con los oceanos:\n\n");
 			printf("El campo magnetico de la Tierra atrae a la Luna .Pero la Luna tambien atrae\n");
 			printf(" a la Tierra y, especialmente, a los oceanos.Es lo que provoca las mareas.\n");
@@ -718,7 +758,7 @@ void luna() {
 				printf("La Luna es creciente de la Luna nueva hasta la Luna llena y \n");
 				printf("menguante,desde la luna llena hasta la Luna nueva siguiente.\n");
 				printf("Durante la fase creciente de la Luna , las plantas crecen mas deprisa.\n");
-				printf("Es el momento de sembrar semillas y de plantar los Ã¡rboles .\n");
+				printf("Es el momento de sembrar semillas y de plantar los �?¡rboles .\n");
 				printf("Durante la Luna menguante, la luz es mas tenue, las plantas no\n");
 				printf("se mantienen tan bien.Si cortas el cesped, crecera mas despacio.\n");
            	}else if ((curiosidad == 'N') || (curiosidad == 'n')) {
@@ -734,7 +774,12 @@ void luna() {
 
 void espacio(){
 	char tema;
+	int i;
+	for(i=0;i<300;i++) {
+		printf("  \n");
+	}
 	system("cls");
+	system("color 0C");
 	printf("     ###  La conquista el espacio  ###\n\n");
 	printf("Con este titulo tan sorprendente nos referimos al comienzo  \n");
 	printf("de la exploracion espacial por parte de la especie humana.\n\n");
@@ -781,7 +826,6 @@ void espacio(){
 	}	
 }
 
-
 void ordenarBurbuja(){
 	int i,j,temp;
 	
@@ -807,4 +851,3 @@ void ordenarBurbuja(){
 
 
 }
-
