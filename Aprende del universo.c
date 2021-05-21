@@ -22,6 +22,8 @@ jugadores mejor;
 
 // Definir funciones
 // Dibujos
+
+void pies();
 void bannerInicio();
 void bannerFinal();
 void planeta();
@@ -350,7 +352,7 @@ system("color 0B");
 		
 		//  COMPROBACION JUEGO FUNCIONA BIEN --> printf("%s %d", principal.nombre, principal.puntuacion);
 		
-		fprintf(f,"%s %d", principal.nombre, principal.puntuacion); // Imprimir en el fichero
+		fprintf(f,"%s %d\n", principal.nombre, principal.puntuacion); // Imprimir en el fichero
 	
 
 		// 3. Cerrar el fichero
@@ -364,6 +366,9 @@ system("color 0B");
 	printf("					|       	    -Pulse 2 si quiere cerrar el programa                                                             |\n");
 	printf("					-----------------------------------------------------------------------------------------------------------------------\n");
 	scanf("%d", &x);
+	for(i=0;i<500;i++) {
+		printf("  \n");
+	}
 	system("cls");
 }while(x==1);
 	
@@ -375,6 +380,15 @@ system("color 0B");
 }
 
 // Declaramos las funciones banner
+
+void pies() {
+	printf("                           oooO \n");
+	printf("                          (....)     Oooo\n");
+	printf("                           ...(     (....)\n");
+	printf("                            ._)      )../\n");
+	printf("                                     (_/ \n");
+}
+
 void bannerInicio() {
 	system("color 0B");
 	printf("						 		_________________________________\n");
@@ -462,10 +476,10 @@ void estrella(){
 	printf("						                  00000000 \n");
 	printf("						                00000000000 \n");
 	printf("						        00000000000000000000000000000 \n");
-	printf("						          0000000000 000 0000000000 \n");
-	printf("						            00000000 000 00000000 \n");
-	printf("						              000000 000 000000 \n");
-	printf("						               00000 000 00000 \n");
+	printf("						          0000000000000000000000000 \n");
+	printf("						            000000000000000000000 \n");
+	printf("						              00000000000000000 \n");
+	printf("						               000000000000000 \n");
 	printf("						               000000000000000 \n");
 	printf("						              00000000000000000 \n");
 	printf("						             000000000 000000000 \n");
@@ -474,7 +488,8 @@ void estrella(){
 }
 
 void Dibujo_Luna(){
-	printf("						                  00\n");
+	printf("						                    0\n");
+	printf("						                   00\n");
 	printf("						                 000\n");
 	printf("						               0000\n");
 	printf("						              0000\n");
@@ -482,11 +497,34 @@ void Dibujo_Luna(){
 	printf("						           00000\n");
 	printf("						          000000\n");
 	printf("						         0000000\n");
-	printf("						         0000000\n");
-	printf("						         0000000\n");
-	printf("						         00000000\n");
-	printf("						         000000000                     0\n");
-	printf("						          000000000                   00\n");
+	printf("						        00000000\n");
+	printf("						        00000000\n");
+	printf("						        000000000\n");
+	printf("						        0000000000                     0\n");
+	printf("						         0000000000                   00\n");
+	printf("						           000000000                000\n");
+	printf("						            000000000             0000\n");
+	printf("						              0000000000        000000\n");
+	printf("						                000000000000000000000\n");
+	printf("						                  00000000000000000\n");
+	printf("						                      000000000\n");
+	printf("\n");
+
+	
+	printf("						                      0000000\n");
+	printf("						                  000000000000000\n");
+	printf("						                0000000000000000000\n");
+	printf("						              0000000000        0000\n");
+	printf("						            000000000             00\n");
+	printf("						           000000000                \n");
+	printf("						         0000000000                   \n");
+	printf("						        0000000000                     \n");
+	printf("						        000000000\n");
+	printf("						        00000000\n");
+	printf("						        00000000\n");
+	printf("						        000000000\n");
+	printf("						        0000000000                     0\n");
+	printf("						         0000000000                   00\n");
 	printf("						           000000000                000\n");
 	printf("						            000000000             0000\n");
 	printf("						              0000000000        000000\n");
@@ -522,7 +560,8 @@ void universo() {
 				printf("     ***  Las Galaxias  ***\n\n");
 				printf("  Una galaxia es el conjunto de estrellas, planetas, cometas, nubes de gas\n  y de polvo que giran alrededor de un mismo nucleo.\n\n");
 				printf("  --- Querrias saber un dato curioso... ---\n");
-				printf("   Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+				printf("   Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n\n");
+				pies();
 				fflush(stdin);
 				scanf("%c", &curiosidad);
 				if((curiosidad == 'S') || (curiosidad == 's')) {
@@ -558,7 +597,7 @@ void sistemaSolar() {
 	}
 	system("cls");
 	system("color 06");
-	estrella();
+	tierra();
 	printf("     ###  El Sistema Solar  ###\n\n");
 	printf("  Escoje uno entre los siguientes:\n");				
 	printf("      -Observando el cielo.  (C)\n");
@@ -576,9 +615,11 @@ void sistemaSolar() {
 			printf("No fue hasta los mayas, en la ciudad de Chichen Itza, que construyeron\nel primer observatorio que permitio estudiar el cielo.\n");
 			printf("Los primeros astronomos observaban el cielo unicamente con sus ojos,\nmas tarde crearon instrumentos como el anteojo astronomico y el telescopio.\n\n");
 			printf("Querrias saber un dato curioso...\n");
-			printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+			printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n\n");
+			pies();
 			fflush(stdin);
 			scanf("%c", &curiosidad);
+			
 				if((curiosidad == 'S') || (curiosidad == 's')) {
 					printf("Tu tambien puedes observar el cielo con herramientas o sin ellas.\n");
 					printf("En verano, todo agosto puedes admirar la estrellas fugaces, como las\n");
@@ -601,7 +642,8 @@ void sistemaSolar() {
 			printf("La superficie del Sol se parece a la piel de un pomelo gigante que se estuviera\n moviendo sin parar y que lanzara llamas como un dragon.\n");
 			printf("La vida en la Tierra es posible gracias al Sol y a la presencia de agua. Con un\npoco mas de radiacion solar o con un poco menos todo podria cambiar.\n\n");
 			printf("Querrias saber un dato curioso...\n");
-			printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+			printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n\n");
+			pies();
 			fflush(stdin);
 			scanf("%c", &curiosidad);
 
@@ -621,7 +663,8 @@ void sistemaSolar() {
 			printf("\n");
 	}   
 	printf("Querrias saber un dato curioso...\n");
-	printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+	printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n\n");
+	pies();
 	fflush(stdin);
 	scanf("%c", &curiosidad);
 	if((curiosidad == 'S') || (curiosidad == 's')) {
@@ -643,12 +686,11 @@ void sistemaSolar() {
 
 void planetas() {
 	int i;
-	char tema, curiosidad;
+	char tema;
 	for(i=0;i<300;i++) {
 		printf("  \n");
 	}
 	system("cls");
-	tierra();
 	printf("     ***  Los planetas y demas cuerpos estelares  ***\n\n");
 	printf(" Escoje uno entre los siguientes:\n");					
 	printf("      -Mercurio.  (M)\n");
@@ -805,7 +847,8 @@ void luna() {
 		case 'U':			
 		    printf("Curiosidades:\n");
 			printf("Querrias saber un dato curioso...\n");
-			printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n");
+			printf("Si quiere conocerlo pulse (S) y si quiere continuar pulse (N)\n\n");
+			pies();
 			fflush(stdin);
 			scanf("%c", &curiosidad);
 				            
