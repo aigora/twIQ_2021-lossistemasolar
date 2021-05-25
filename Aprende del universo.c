@@ -37,13 +37,13 @@ void sistemaSolar();
 void planetas();
 void luna();
 void espacio();
-void ordenarBurbuja();
+//void ordenarBurbuja();
 
 int main() {
 system("color 0B");
     
 // Variables necesarias
-	int  x, n=1, i=0;
+	int  x, n=1, i=0, aux;
 	char tema;
 	
 	FILE *f;
@@ -124,7 +124,7 @@ system("color 0B");
 			fscanf(f, "%s %d", jugador[i].nombre, &jugador[i].puntuacion);
 			
 			
-			// ordenarBurbuja(); // FALLO
+			ordenarBurbuja(); // FALLO
 			
 			
 			printf("	 								%s	___________	%d\n\n", jugador[i].nombre, jugador[i].puntuacion);
@@ -352,6 +352,7 @@ system("color 0B");
 		
 		//  COMPROBACION JUEGO FUNCIONA BIEN --> printf("%s %d", principal.nombre, principal.puntuacion);
 		
+
 		fprintf(f,"%s %d\n", principal.nombre, principal.puntuacion); // Imprimir en el fichero
 	
 
@@ -497,29 +498,6 @@ void Dibujo_Luna(){
 	printf("						           00000\n");
 	printf("						          000000\n");
 	printf("						         0000000\n");
-	printf("						        00000000\n");
-	printf("						        00000000\n");
-	printf("						        000000000\n");
-	printf("						        0000000000                     0\n");
-	printf("						         0000000000                   00\n");
-	printf("						           000000000                000\n");
-	printf("						            000000000             0000\n");
-	printf("						              0000000000        000000\n");
-	printf("						                000000000000000000000\n");
-	printf("						                  00000000000000000\n");
-	printf("						                      000000000\n");
-	printf("\n");
-
-	
-	printf("						                      0000000\n");
-	printf("						                  000000000000000\n");
-	printf("						                0000000000000000000\n");
-	printf("						              0000000000        0000\n");
-	printf("						            000000000             00\n");
-	printf("						           000000000                \n");
-	printf("						         0000000000                   \n");
-	printf("						        0000000000                     \n");
-	printf("						        000000000\n");
 	printf("						        00000000\n");
 	printf("						        00000000\n");
 	printf("						        000000000\n");
@@ -928,7 +906,7 @@ void espacio(){
 void ordenarBurbuja(){
 	int i,j,temp;
 	
-	for(i=1;i<N;i++) {
+	for(i=0;i<N;i++) {
 		temp=jugador[i].puntuacion;
 		j=i-1;
 		while((jugador[j].puntuacion < temp) && (j >=0)){
@@ -946,7 +924,7 @@ void ordenarBurbuja(){
                 jugador[j+1].puntuacion=aux;
             }
         }
-    }*/
+    } */
 
 
-}
+} 
