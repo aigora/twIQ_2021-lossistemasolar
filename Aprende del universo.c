@@ -37,8 +37,7 @@ void sistemaSolar();
 void planetas();
 void luna();
 void espacio();
-//void ordenarBurbuja();
-
+void ordenar(jugadores v[]);
 int main() {
 system("color 0B");
     
@@ -122,10 +121,14 @@ system("color 0B");
 		printf("								## Lista de los jugadores ##\n\n");
 		while(i<5){
 			fscanf(f, "%s %d", jugador[i].nombre, &jugador[i].puntuacion);
-			
-			
-			ordenarBurbuja(); // FALLO
-			
+			i++;
+		
+		}
+		
+		ordenar(jugador);
+		
+		i=0;
+		while(i<5){
 			
 			printf("	 								%s	___________	%d\n\n", jugador[i].nombre, jugador[i].puntuacion);
 			i++;
@@ -903,28 +906,19 @@ void espacio(){
 	}	
 }
 
-void ordenarBurbuja(){
-	int i,j,temp;
+void ordenar(jugadores v[]) {
+	int i,j;
+	jugadores aux;
+
 	
-	for(i=0;i<N;i++) {
-		temp=jugador[i].puntuacion;
-		j=i-1;
-		while((jugador[j].puntuacion < temp) && (j >=0)){
-			jugador[j+1].puntuacion = jugador[j].puntuacion;
-			j--;
+	for(i=0;i<N-1;i++) {
+		for(j=i+1;j<N;j++) {
+			if(v[i].puntuacion < v[j].puntuacion) {
+				aux= v[i];
+				v[i] = v[j];
+				v[j] = aux;
+			
+			}
 		}
-		jugador[j+1].puntuacion = temp;
 	}
-    /*int aux, i, j;
-    for(i=0;i<5;i++){
-        for(j=0;j<(5-1);j++){
-            if(jugador[j].puntuacion > jugador[j+1].puntuacion){
-                aux=jugador[j].puntuacion;
-                jugador[j].puntuacion=jugador[j+1].puntuacion;
-                jugador[j+1].puntuacion=aux;
-            }
-        }
-    } */
-
-
-} 
+}
